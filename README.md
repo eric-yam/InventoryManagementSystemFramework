@@ -1,1 +1,1 @@
-# InventoryManagementSystemDemo
+# InventoryManagementSystemFramework
