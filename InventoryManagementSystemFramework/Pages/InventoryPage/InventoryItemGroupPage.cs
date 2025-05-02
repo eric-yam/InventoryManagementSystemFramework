@@ -1,38 +1,39 @@
 using System.Threading.Tasks;
 using Microsoft.Playwright;
 
-public class InventoryItemGroupPage : BasePage
+namespace InventoryManagementSystemFramework.Pages.InventoryPage
 {
-    private ILocator GroupDropdown() => this.page.Locator("a[class='dropdown-toggle ember-view     no-caret']");
-    private ILocator DropdownMenu() => this.page.Locator("div[class='dropdown-menu show  scrollmenu listview-filter'] button[class^='dropdown-item']");
-    private InventoryItemGroupsTables table;
-    public InventoryItemGroupPage(IPage page) : base(page)
+    public class InventoryItemGroupPage : BasePage
     {
-        this.table = new InventoryItemGroupsTables(page);
-    }
-
-    public static async Task<InventoryItemGroupPage> CreateAsync(IPage page)
-    {
-        InventoryItemGroupPage iigp = new InventoryItemGroupPage(page);
-        iigp.table = await InventoryItemGroupsTables.CreateAsync(page);//double check 
-        return iigp;
-    }
-
-    public async Task SelectDropdownOption(string groupOption)
-    {
-        await this.GroupDropdown().ClickAsync();
-        var menuList = await this.DropdownMenu().AllAsync();
-
-        foreach (var menuOption in menuList)
+        private ILocator GroupDropdown() => this.page.Locator("a[class='dropdown-toggle ember-view     no-caret']");
+        private ILocator DropdownMenu() => this.page.Locator("div[class='dropdown-menu show  scrollmenu listview-filter'] button[class^='dropdown-item']");
+        private InventoryItemGroupsTables table;
+        public InventoryItemGroupPage(IPage page) : base(page)
         {
-            string? s = await menuOption.TextContentAsync();
-            if (s.Equals(groupOption))
+            this.table = new InventoryItemGroupsTables(page);
+        }
+
+        public static async Task<InventoryItemGroupPage> CreateAsync(IPage page)
+        {
+            InventoryItemGroupPage iigp = new InventoryItemGroupPage(page);
+            iigp.table = await InventoryItemGroupsTables.CreateAsync(page);//double check 
+            return iigp;
+        }
+
+        public async Task SelectDropdownOption(string groupOption)
+        {
+            await this.GroupDropdown().ClickAsync();
+            var menuList = await this.DropdownMenu().AllAsync();
+
+            foreach (var menuOption in menuList)
             {
-                await menuOption.ClickAsync();
-                break;
+                string? s = await menuOption.TextContentAsync();
+                if (s.Equals(groupOption))
+                {
+                    await menuOption.ClickAsync();
+                    break;
+                }
             }
         }
     }
-
-
 }

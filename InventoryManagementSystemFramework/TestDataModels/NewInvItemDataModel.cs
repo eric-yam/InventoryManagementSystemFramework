@@ -1,14 +1,17 @@
-public class NewInvItemDataModel
+namespace InventoryManagementSystemFramework.TestDataModels
 {
-    public string InventoryItemType { get; set; }
+    public class NewInvItemDataModel
+    {
+        public string InventoryItemType { get; set; }
 
-    public string Name { get; set; }
+        public string Name { get; set; }
 
-    public string Sku { get; set; }
+        public string Sku { get; set; }
 
-    public string Unit { get; set; }
+        public string Unit { get; set; }
 
-    public double SellPrice { get; set; }
+        public double SellPrice { get; set; }
 
-    public double CostPrice { get; set; }
+        public double CostPrice { get; set; }
+    }
 }

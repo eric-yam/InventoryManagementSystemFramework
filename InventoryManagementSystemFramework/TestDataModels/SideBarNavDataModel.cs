@@ -1,4 +1,7 @@
-public class SideBarNavDataModel
+namespace InventoryManagementSystemFramework.TestDataModels
 {
-    public List<string> SidebarNavSteps { get; set; }
+    public class SideBarNavDataModel
+    {
+        public List<string> SidebarNavSteps { get; set; }
+    }
 }

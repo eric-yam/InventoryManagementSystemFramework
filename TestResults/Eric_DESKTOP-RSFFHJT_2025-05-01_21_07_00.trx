@@ -1,0 +1,1533 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="9d391f09-8889-4ffe-a843-af512ff3f2be" name="Eric@DESKTOP-RSFFHJT 2025-05-01 21:07:00" runUser="DESKTOP-RSFFHJT\Eric" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-05-01T21:07:00.3432115-04:00" queuing="2025-05-01T21:07:00.3432119-04:00" start="2025-05-01T21:06:58.5705478-04:00" finish="2025-05-01T21:07:12.0096070-04:00" />
+  <TestSettings name="default" id="d34606dd-99cd-4d1e-9553-2f315690d9ba">
+    <Deployment runDeploymentRoot="Eric_DESKTOP-RSFFHJT_2025-05-01_21_07_00" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="0f621925-6159-486c-bb2d-50dcce021237" testId="616081ed-6748-4ddd-1a23-d6d10bb4667b" testName="Test1" computerName="DESKTOP-RSFFHJT" duration="00:00:00.0116320" startTime="2025-05-01T21:06:58.9386031-04:00" endTime="2025-05-01T21:06:58.9502017-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f621925-6159-486c-bb2d-50dcce021237" />
+    <UnitTestResult executionId="e3e2c180-fe47-400a-b14e-d3cb993307ae" testId="abe8963b-8411-9f30-23e2-34429e1653fd" testName="Test_Inventory_Items()" computerName="DESKTOP-RSFFHJT" duration="00:00:00.0000290" startTime="2025-05-01T21:07:11.9562164-04:00" endTime="2025-05-01T21:07:11.9562450-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e3e2c180-fe47-400a-b14e-d3cb993307ae">
+      <Output>
+        <ErrorInfo>
+          <Message>System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.&#xD;
+  ----&gt; System.IO.DirectoryNotFoundException : Could not find a part of the path 'C:\Users\Eric\Documents\vscode-repos\InventoryManagementSystemFramework\InventoryManagementSystemFramework\bin\Debug\net9.0\Resources\nav_bar_workflow_test_data.json'.</Message>
+          <StackTrace>   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)&#xD;
+   at NUnit.Framework.Internal.Extensions.MethodInfoExtensions.InvokeMaybeAwait[TReturn](MethodInfo m, Object[] methodArgs)&#xD;
+   at NUnit.Framework.TestCaseSourceAttribute.GetTestCaseSource(IMethodInfo method)&#xD;
+   at NUnit.Framework.TestCaseSourceAttribute.&lt;&gt;c__DisplayClass20_0.&lt;GetTestCasesFor&gt;b__0()&#xD;
+   at NUnit.Framework.Internal.ContextUtils.&lt;&gt;c__DisplayClass1_0`1.&lt;DoIsolated&gt;b__0(Object _)&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+   at NUnit.Framework.Internal.ContextUtils.DoIsolated(ContextCallback callback, Object state)&#xD;
+   at NUnit.Framework.Internal.ContextUtils.DoIsolated[T](Func`1 func)&#xD;
+   at NUnit.Framework.TestCaseSourceAttribute.GetTestCasesFor(IMethodInfo method)&#xD;
+--DirectoryNotFoundException&#xD;
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)&#xD;
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)&#xD;
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)&#xD;
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)&#xD;
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)&#xD;
+   at System.IO.File.ReadAllText(String path, Encoding encoding)&#xD;
+   at TestDataProvider.NavBarWorkflowDataProvider() in C:\Users\Eric\Documents\vscode-repos\InventoryManagementSystemFramework\InventoryManagementSystemFramework\TestDataProviders\TestDataProvider.cs:line 32&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="105db91d-5562-455a-8e6a-4b16ca468c5f" testId="47513da2-d13f-1781-e588-ee0d4c918a7c" testName="Test_Fill_New_Inv_Item()" computerName="DESKTOP-RSFFHJT" duration="00:00:00.0001330" startTime="2025-05-01T21:06:58.9531532-04:00" endTime="2025-05-01T21:06:58.9532856-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="105db91d-5562-455a-8e6a-4b16ca468c5f">
+      <Output>
+        <ErrorInfo>
+          <Message>System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.&#xD;
+  ----&gt; System.IO.DirectoryNotFoundException : Could not find a part of the path 'C:\Users\Eric\Documents\vscode-repos\InventoryManagementSystemFramework\InventoryManagementSystemFramework\bin\Debug\net9.0\Resources\add_new_item_workflow_test_data.json'.</Message>
+          <StackTrace>   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)&#xD;
+   at NUnit.Framework.Internal.Extensions.MethodInfoExtensions.InvokeMaybeAwait[TReturn](MethodInfo m, Object[] methodArgs)&#xD;
+   at NUnit.Framework.TestCaseSourceAttribute.GetTestCaseSource(IMethodInfo method)&#xD;
+   at NUnit.Framework.TestCaseSourceAttribute.&lt;&gt;c__DisplayClass20_0.&lt;GetTestCasesFor&gt;b__0()&#xD;
+   at NUnit.Framework.Internal.ContextUtils.&lt;&gt;c__DisplayClass1_0`1.&lt;DoIsolated&gt;b__0(Object _)&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+   at NUnit.Framework.Internal.ContextUtils.DoIsolated(ContextCallback callback, Object state)&#xD;
+   at NUnit.Framework.Internal.ContextUtils.DoIsolated[T](Func`1 func)&#xD;
+   at NUnit.Framework.TestCaseSourceAttribute.GetTestCasesFor(IMethodInfo method)&#xD;
+--DirectoryNotFoundException&#xD;
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)&#xD;
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)&#xD;
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)&#xD;
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)&#xD;
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)&#xD;
+   at System.IO.File.ReadAllText(String path, Encoding encoding)&#xD;
+   at TestDataProvider.AddNewItemWorkflowDataProvider() in C:\Users\Eric\Documents\vscode-repos\InventoryManagementSystemFramework\InventoryManagementSystemFramework\TestDataProviders\TestDataProvider.cs:line 38&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="78324c74-7774-4e41-9e08-332d2bb5cff7" testId="ecc1bcc7-12d3-b9a4-3e4b-83dfc613c7f0" testName="Test_Inventory_Item_Groups" computerName="DESKTOP-RSFFHJT" duration="00:00:06.9577220" startTime="2025-05-01T21:07:04.9984246-04:00" endTime="2025-05-01T21:07:11.9561461-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="78324c74-7774-4e41-9e08-332d2bb5cff7" />
+    <UnitTestResult executionId="2845aa06-3af8-4c5b-ad80-b74291fbf532" testId="ef76d745-6bb7-ce82-eab4-e1b079f23477" testName="Test_Inventory_Item_Adjustments" computerName="DESKTOP-RSFFHJT" duration="00:00:06.0450390" startTime="2025-05-01T21:06:58.9533417-04:00" endTime="2025-05-01T21:07:04.9983789-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2845aa06-3af8-4c5b-ad80-b74291fbf532">
+      <Output>
+        <StdErr>2025-05-02T01:07:00.096Z pw:api navigating to "https://www.zoho.com/ca/inventory/inventory-software-demo/#/home/inventory-dashboard", waiting until "load"&#xD;
+&#xD;
+2025-05-02T01:07:00.341Z pw:api   "commit" event fired&#xD;
+&#xD;
+2025-05-02T01:07:00.342Z pw:api   navigated to "https://www.zoho.com/ca/inventory/inventory-software-demo/#/home/inventory-dashboard"&#xD;
+&#xD;
+2025-05-02T01:07:02.376Z pw:api   "networkidle" event fired&#xD;
+&#xD;
+2025-05-02T01:07:02.808Z pw:api   "domcontentloaded" event fired&#xD;
+&#xD;
+2025-05-02T01:07:03.748Z pw:api   "load" event fired&#xD;
+&#xD;
+2025-05-02T01:07:03.782Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").First&#xD;
+&#xD;
+2025-05-02T01:07:03.787Z pw:api   locator resolved to &lt;a id="ember79" href="#/home" class="ember-view active nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.789Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(1)&#xD;
+&#xD;
+2025-05-02T01:07:03.793Z pw:api   locator resolved to &lt;a id="ember82" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.794Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(2)&#xD;
+&#xD;
+2025-05-02T01:07:03.797Z pw:api   locator resolved to &lt;a id="ember86" href="#/inventory/items" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.798Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(3)&#xD;
+&#xD;
+2025-05-02T01:07:03.801Z pw:api   locator resolved to &lt;a id="ember91" class="ember-view nav-link" href="#/inventory/itemgroups"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.802Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(4)&#xD;
+&#xD;
+2025-05-02T01:07:03.805Z pw:api   locator resolved to &lt;a id="ember97" class="ember-view nav-link" href="#/inventory/adjustments"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.806Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(5)&#xD;
+&#xD;
+2025-05-02T01:07:03.809Z pw:api   locator resolved to &lt;a id="ember104" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.810Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(6)&#xD;
+&#xD;
+2025-05-02T01:07:03.812Z pw:api   locator resolved to &lt;a id="ember108" href="#/contacts" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.814Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(7)&#xD;
+&#xD;
+2025-05-02T01:07:03.816Z pw:api   locator resolved to &lt;a id="ember114" href="#/salesorders" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.817Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(8)&#xD;
+&#xD;
+2025-05-02T01:07:03.820Z pw:api   locator resolved to &lt;a id="ember121" href="#/packages" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.821Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(9)&#xD;
+&#xD;
+2025-05-02T01:07:03.823Z pw:api   locator resolved to &lt;a id="ember125" href="#/shipments" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.824Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(10)&#xD;
+&#xD;
+2025-05-02T01:07:03.826Z pw:api   locator resolved to &lt;a id="ember129" href="#/invoices" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.827Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(11)&#xD;
+&#xD;
+2025-05-02T01:07:03.829Z pw:api   locator resolved to &lt;a id="ember134" href="#/paymentsreceived" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.830Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(12)&#xD;
+&#xD;
+2025-05-02T01:07:03.832Z pw:api   locator resolved to &lt;a id="ember140" href="#/salesreturns" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.833Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(13)&#xD;
+&#xD;
+2025-05-02T01:07:03.837Z pw:api   locator resolved to &lt;a id="ember143" href="#/creditnotes" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.838Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(14)&#xD;
+&#xD;
+2025-05-02T01:07:03.840Z pw:api   locator resolved to &lt;a id="ember147" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.841Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(15)&#xD;
+&#xD;
+2025-05-02T01:07:03.847Z pw:api   locator resolved to &lt;a id="ember151" href="#/vendors" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.848Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(16)&#xD;
+&#xD;
+2025-05-02T01:07:03.851Z pw:api   locator resolved to &lt;a id="ember155" href="#/expenses" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.852Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(17)&#xD;
+&#xD;
+2025-05-02T01:07:03.855Z pw:api   locator resolved to &lt;a id="ember159" href="#/purchaseorders" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.856Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(18)&#xD;
+&#xD;
+2025-05-02T01:07:03.858Z pw:api   locator resolved to &lt;a id="ember163" href="#/purchasereceives" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.859Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(19)&#xD;
+&#xD;
+2025-05-02T01:07:03.861Z pw:api   locator resolved to &lt;a id="ember168" href="#/bills" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.862Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(20)&#xD;
+&#xD;
+2025-05-02T01:07:03.864Z pw:api   locator resolved to &lt;a id="ember172" href="#/paymentsmade" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.865Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(21)&#xD;
+&#xD;
+2025-05-02T01:07:03.868Z pw:api   locator resolved to &lt;a id="ember177" href="#/vendorcredits" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.869Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(22)&#xD;
+&#xD;
+2025-05-02T01:07:03.872Z pw:api   locator resolved to &lt;a id="ember181" class="ember-view nav-link" href="#/settings/integrations"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.873Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(23)&#xD;
+&#xD;
+2025-05-02T01:07:03.874Z pw:api   locator resolved to &lt;a id="ember184" href="#/reports" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.875Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(24)&#xD;
+&#xD;
+2025-05-02T01:07:03.877Z pw:api   locator resolved to &lt;a id="ember187" href="#/documents/inbox" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.880Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(1)&#xD;
+&#xD;
+2025-05-02T01:07:03.884Z pw:api   locator resolved to &lt;a id="ember82" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.886Z pw:api attempting click action&#xD;
+&#xD;
+2025-05-02T01:07:03.887Z pw:api   waiting for element to be visible, enabled and stable&#xD;
+&#xD;
+2025-05-02T01:07:03.918Z pw:api   element is visible, enabled and stable&#xD;
+&#xD;
+2025-05-02T01:07:03.918Z pw:api   scrolling into view if needed&#xD;
+&#xD;
+2025-05-02T01:07:03.919Z pw:api   done scrolling&#xD;
+&#xD;
+2025-05-02T01:07:03.922Z pw:api   performing click action&#xD;
+&#xD;
+2025-05-02T01:07:03.931Z pw:api   click action done&#xD;
+&#xD;
+2025-05-02T01:07:03.931Z pw:api   waiting for scheduled navigations to finish&#xD;
+&#xD;
+2025-05-02T01:07:03.932Z pw:api   navigations have finished&#xD;
+&#xD;
+2025-05-02T01:07:03.939Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").First&#xD;
+&#xD;
+2025-05-02T01:07:03.944Z pw:api   locator resolved to &lt;a id="ember79" href="#/home" class="ember-view active nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.945Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(1)&#xD;
+&#xD;
+2025-05-02T01:07:03.947Z pw:api   locator resolved to &lt;a id="ember82" class="ember-view nav-link "&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.948Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(2)&#xD;
+&#xD;
+2025-05-02T01:07:03.951Z pw:api   locator resolved to &lt;a id="ember86" href="#/inventory/items" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.952Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(3)&#xD;
+&#xD;
+2025-05-02T01:07:03.955Z pw:api   locator resolved to &lt;a id="ember91" class="ember-view nav-link" href="#/inventory/itemgroups"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.956Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(4)&#xD;
+&#xD;
+2025-05-02T01:07:03.958Z pw:api   locator resolved to &lt;a id="ember97" class="ember-view nav-link" href="#/inventory/adjustments"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.959Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(5)&#xD;
+&#xD;
+2025-05-02T01:07:03.961Z pw:api   locator resolved to &lt;a id="ember104" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.962Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(6)&#xD;
+&#xD;
+2025-05-02T01:07:03.964Z pw:api   locator resolved to &lt;a id="ember108" href="#/contacts" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.965Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(7)&#xD;
+&#xD;
+2025-05-02T01:07:03.967Z pw:api   locator resolved to &lt;a id="ember114" href="#/salesorders" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.968Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(8)&#xD;
+&#xD;
+2025-05-02T01:07:03.971Z pw:api   locator resolved to &lt;a id="ember121" href="#/packages" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.972Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(9)&#xD;
+&#xD;
+2025-05-02T01:07:03.975Z pw:api   locator resolved to &lt;a id="ember125" href="#/shipments" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.976Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(10)&#xD;
+&#xD;
+2025-05-02T01:07:03.978Z pw:api   locator resolved to &lt;a id="ember129" href="#/invoices" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.978Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(11)&#xD;
+&#xD;
+2025-05-02T01:07:03.981Z pw:api   locator resolved to &lt;a id="ember134" href="#/paymentsreceived" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.982Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(12)&#xD;
+&#xD;
+2025-05-02T01:07:03.985Z pw:api   locator resolved to &lt;a id="ember140" href="#/salesreturns" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.986Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(13)&#xD;
+&#xD;
+2025-05-02T01:07:03.990Z pw:api   locator resolved to &lt;a id="ember143" href="#/creditnotes" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.991Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(14)&#xD;
+&#xD;
+2025-05-02T01:07:03.993Z pw:api   locator resolved to &lt;a id="ember147" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.994Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(15)&#xD;
+&#xD;
+2025-05-02T01:07:03.996Z pw:api   locator resolved to &lt;a id="ember151" href="#/vendors" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:03.996Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(16)&#xD;
+&#xD;
+2025-05-02T01:07:03.999Z pw:api   locator resolved to &lt;a id="ember155" href="#/expenses" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.000Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(17)&#xD;
+&#xD;
+2025-05-02T01:07:04.004Z pw:api   locator resolved to &lt;a id="ember159" href="#/purchaseorders" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.005Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(18)&#xD;
+&#xD;
+2025-05-02T01:07:04.007Z pw:api   locator resolved to &lt;a id="ember163" href="#/purchasereceives" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.008Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(19)&#xD;
+&#xD;
+2025-05-02T01:07:04.010Z pw:api   locator resolved to &lt;a id="ember168" href="#/bills" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.011Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(20)&#xD;
+&#xD;
+2025-05-02T01:07:04.013Z pw:api   locator resolved to &lt;a id="ember172" href="#/paymentsmade" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.013Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(21)&#xD;
+&#xD;
+2025-05-02T01:07:04.016Z pw:api   locator resolved to &lt;a id="ember177" href="#/vendorcredits" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.017Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(22)&#xD;
+&#xD;
+2025-05-02T01:07:04.021Z pw:api   locator resolved to &lt;a id="ember181" class="ember-view nav-link" href="#/settings/integrations"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.022Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(23)&#xD;
+&#xD;
+2025-05-02T01:07:04.028Z pw:api   locator resolved to &lt;a id="ember184" href="#/reports" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.029Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(24)&#xD;
+&#xD;
+2025-05-02T01:07:04.031Z pw:api   locator resolved to &lt;a id="ember187" href="#/documents/inbox" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.032Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(4)&#xD;
+&#xD;
+2025-05-02T01:07:04.041Z pw:api   locator resolved to &lt;a id="ember97" class="ember-view nav-link" href="#/inventory/adjustments"&gt;ΓÇª&lt;/a&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.043Z pw:api attempting click action&#xD;
+&#xD;
+2025-05-02T01:07:04.043Z pw:api   waiting for element to be visible, enabled and stable&#xD;
+&#xD;
+2025-05-02T01:07:04.068Z pw:api   element is visible, enabled and stable&#xD;
+&#xD;
+2025-05-02T01:07:04.068Z pw:api   scrolling into view if needed&#xD;
+&#xD;
+2025-05-02T01:07:04.069Z pw:api   done scrolling&#xD;
+&#xD;
+2025-05-02T01:07:04.071Z pw:api   performing click action&#xD;
+&#xD;
+2025-05-02T01:07:04.092Z pw:api   click action done&#xD;
+&#xD;
+2025-05-02T01:07:04.092Z pw:api   waiting for scheduled navigations to finish&#xD;
+&#xD;
+2025-05-02T01:07:04.093Z pw:api   navigations have finished&#xD;
+&#xD;
+2025-05-02T01:07:04.096Z pw:api waiting for Locator("table[id='vertically-scrolled-table']") to be visible&#xD;
+&#xD;
+2025-05-02T01:07:04.404Z pw:api   "networkidle" event fired&#xD;
+&#xD;
+2025-05-02T01:07:04.504Z pw:api   navigated to "https://www.zoho.com/ca/inventory/inventory-software-demo/#/inventory/adjustments?filter_by=AdjustmentDate.All%2CAdjustmentType.All&amp;per_page=50"&#xD;
+&#xD;
+2025-05-02T01:07:04.913Z pw:api   locator resolved to visible &lt;table id="vertically-scrolled-table" class="table zi-table table-hover    "&gt;ΓÇª&lt;/table&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.917Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(2)")&#xD;
+&#xD;
+2025-05-02T01:07:04.919Z pw:api   locator resolved to &lt;td&gt;6 Aug 2024&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.920Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(3)")&#xD;
+&#xD;
+2025-05-02T01:07:04.921Z pw:api   locator resolved to &lt;td&gt;ΓÇª&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.922Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(4)")&#xD;
+&#xD;
+2025-05-02T01:07:04.924Z pw:api   locator resolved to &lt;td class="text-uppercase font-small"&gt;ΓÇª&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.924Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(5)")&#xD;
+&#xD;
+2025-05-02T01:07:04.926Z pw:api   locator resolved to &lt;td&gt;ADJ-0&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.926Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(6)")&#xD;
+&#xD;
+2025-05-02T01:07:04.928Z pw:api   locator resolved to &lt;td&gt;value&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.928Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(7)")&#xD;
+&#xD;
+2025-05-02T01:07:04.930Z pw:api   locator resolved to &lt;td&gt;demouser&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.931Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(8)")&#xD;
+&#xD;
+2025-05-02T01:07:04.932Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.933Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(9)")&#xD;
+&#xD;
+2025-05-02T01:07:04.934Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.935Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(10)")&#xD;
+&#xD;
+2025-05-02T01:07:04.936Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.938Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(2)")&#xD;
+&#xD;
+2025-05-02T01:07:04.939Z pw:api   locator resolved to &lt;td&gt;6 Aug 2024&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.939Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(3)")&#xD;
+&#xD;
+2025-05-02T01:07:04.941Z pw:api   locator resolved to &lt;td&gt;ΓÇª&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.942Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(4)")&#xD;
+&#xD;
+2025-05-02T01:07:04.943Z pw:api   locator resolved to &lt;td class="text-uppercase font-small"&gt;ΓÇª&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.944Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(5)")&#xD;
+&#xD;
+2025-05-02T01:07:04.945Z pw:api   locator resolved to &lt;td&gt;ADJ-1&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.946Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(6)")&#xD;
+&#xD;
+2025-05-02T01:07:04.947Z pw:api   locator resolved to &lt;td&gt;quantity&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.948Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(7)")&#xD;
+&#xD;
+2025-05-02T01:07:04.949Z pw:api   locator resolved to &lt;td&gt;demouser&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.950Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(8)")&#xD;
+&#xD;
+2025-05-02T01:07:04.952Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.953Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(9)")&#xD;
+&#xD;
+2025-05-02T01:07:04.954Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.955Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(10)")&#xD;
+&#xD;
+2025-05-02T01:07:04.956Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.957Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(2)")&#xD;
+&#xD;
+2025-05-02T01:07:04.958Z pw:api   locator resolved to &lt;td&gt;6 Aug 2024&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.959Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(3)")&#xD;
+&#xD;
+2025-05-02T01:07:04.960Z pw:api   locator resolved to &lt;td&gt;ΓÇª&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.961Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(4)")&#xD;
+&#xD;
+2025-05-02T01:07:04.962Z pw:api   locator resolved to &lt;td class="text-uppercase font-small"&gt;ΓÇª&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.963Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(5)")&#xD;
+&#xD;
+2025-05-02T01:07:04.964Z pw:api   locator resolved to &lt;td&gt;ADJ-2&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.964Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(6)")&#xD;
+&#xD;
+2025-05-02T01:07:04.966Z pw:api   locator resolved to &lt;td&gt;value&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.966Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(7)")&#xD;
+&#xD;
+2025-05-02T01:07:04.968Z pw:api   locator resolved to &lt;td&gt;demouser&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.969Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(8)")&#xD;
+&#xD;
+2025-05-02T01:07:04.970Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.971Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(9)")&#xD;
+&#xD;
+2025-05-02T01:07:04.972Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;&#xD;
+&#xD;
+2025-05-02T01:07:04.973Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(10)")&#xD;
+&#xD;
+2025-05-02T01:07:04.975Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;</StdErr>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Test1" storage="c:\users\eric\documents\vscode-repos\inventorymanagementsystemframework\inventorymanagementsystemframework\bin\debug\net9.0\inventorymanagementsystemframework.dll" id="616081ed-6748-4ddd-1a23-d6d10bb4667b">
+      <Execution id="0f621925-6159-486c-bb2d-50dcce021237" />
+      <TestMethod codeBase="C:\Users\Eric\Documents\vscode-repos\InventoryManagementSystemFramework\InventoryManagementSystemFramework\bin\Debug\net9.0\InventoryManagementSystemFramework.dll" adapterTypeName="executor://nunit3testexecutor/" className="InventoryManagementSystemFramework.Tests" name="Test1" />
+    </UnitTest>
+    <UnitTest name="Test_Fill_New_Inv_Item()" storage="c:\users\eric\documents\vscode-repos\inventorymanagementsystemframework\inventorymanagementsystemframework\bin\debug\net9.0\inventorymanagementsystemframework.dll" id="47513da2-d13f-1781-e588-ee0d4c918a7c">
+      <Execution id="105db91d-5562-455a-8e6a-4b16ca468c5f" />
+      <TestMethod codeBase="C:\Users\Eric\Documents\vscode-repos\InventoryManagementSystemFramework\InventoryManagementSystemFramework\bin\Debug\net9.0\InventoryManagementSystemFramework.dll" adapterTypeName="executor://nunit3testexecutor/" className="InventoryTests" name="Test_Fill_New_Inv_Item()" />
+    </UnitTest>
+    <UnitTest name="Test_Inventory_Item_Groups" storage="c:\users\eric\documents\vscode-repos\inventorymanagementsystemframework\inventorymanagementsystemframework\bin\debug\net9.0\inventorymanagementsystemframework.dll" id="ecc1bcc7-12d3-b9a4-3e4b-83dfc613c7f0">
+      <Execution id="78324c74-7774-4e41-9e08-332d2bb5cff7" />
+      <TestMethod codeBase="C:\Users\Eric\Documents\vscode-repos\InventoryManagementSystemFramework\InventoryManagementSystemFramework\bin\Debug\net9.0\InventoryManagementSystemFramework.dll" adapterTypeName="executor://nunit3testexecutor/" className="InventoryTests" name="Test_Inventory_Item_Groups" />
+    </UnitTest>
+    <UnitTest name="Test_Inventory_Items()" storage="c:\users\eric\documents\vscode-repos\inventorymanagementsystemframework\inventorymanagementsystemframework\bin\debug\net9.0\inventorymanagementsystemframework.dll" id="abe8963b-8411-9f30-23e2-34429e1653fd">
+      <Execution id="e3e2c180-fe47-400a-b14e-d3cb993307ae" />
+      <TestMethod codeBase="C:\Users\Eric\Documents\vscode-repos\InventoryManagementSystemFramework\InventoryManagementSystemFramework\bin\Debug\net9.0\InventoryManagementSystemFramework.dll" adapterTypeName="executor://nunit3testexecutor/" className="InventoryTests" name="Test_Inventory_Items()" />
+    </UnitTest>
+    <UnitTest name="Test_Inventory_Item_Adjustments" storage="c:\users\eric\documents\vscode-repos\inventorymanagementsystemframework\inventorymanagementsystemframework\bin\debug\net9.0\inventorymanagementsystemframework.dll" id="ef76d745-6bb7-ce82-eab4-e1b079f23477">
+      <Execution id="2845aa06-3af8-4c5b-ad80-b74291fbf532" />
+      <TestMethod codeBase="C:\Users\Eric\Documents\vscode-repos\InventoryManagementSystemFramework\InventoryManagementSystemFramework\bin\Debug\net9.0\InventoryManagementSystemFramework.dll" adapterTypeName="executor://nunit3testexecutor/" className="InventoryTests" name="Test_Inventory_Item_Adjustments" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="616081ed-6748-4ddd-1a23-d6d10bb4667b" executionId="0f621925-6159-486c-bb2d-50dcce021237" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="abe8963b-8411-9f30-23e2-34429e1653fd" executionId="e3e2c180-fe47-400a-b14e-d3cb993307ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="47513da2-d13f-1781-e588-ee0d4c918a7c" executionId="105db91d-5562-455a-8e6a-4b16ca468c5f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ecc1bcc7-12d3-b9a4-3e4b-83dfc613c7f0" executionId="78324c74-7774-4e41-9e08-332d2bb5cff7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ef76d745-6bb7-ce82-eab4-e1b079f23477" executionId="2845aa06-3af8-4c5b-ad80-b74291fbf532" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="5" executed="5" passed="3" failed="2" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.6.0.0: Test execution started&#xD;
+Running selected tests in C:\Users\Eric\Documents\vscode-repos\InventoryManagementSystemFramework\InventoryManagementSystemFramework\bin\Debug\net9.0\InventoryManagementSystemFramework.dll&#xD;
+   NUnit3TestExecutor discovered 5 of 5 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 4.6.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+    <RunInfos>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:00.1036875-04:00">
+        <Text>2025-05-02T01:07:00.096Z pw:api navigating to "https://www.zoho.com/ca/inventory/inventory-software-demo/#/home/inventory-dashboard", waiting until "load"</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:00.3478210-04:00">
+        <Text>2025-05-02T01:07:00.341Z pw:api   "commit" event fired</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:00.3478255-04:00">
+        <Text>2025-05-02T01:07:00.342Z pw:api   navigated to "https://www.zoho.com/ca/inventory/inventory-software-demo/#/home/inventory-dashboard"</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:02.3776011-04:00">
+        <Text>2025-05-02T01:07:02.376Z pw:api   "networkidle" event fired</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:02.8097906-04:00">
+        <Text>2025-05-02T01:07:02.808Z pw:api   "domcontentloaded" event fired</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.7495883-04:00">
+        <Text>2025-05-02T01:07:03.748Z pw:api   "load" event fired</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.7828260-04:00">
+        <Text>2025-05-02T01:07:03.782Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").First</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.7883245-04:00">
+        <Text>2025-05-02T01:07:03.787Z pw:api   locator resolved to &lt;a id="ember79" href="#/home" class="ember-view active nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.7903121-04:00">
+        <Text>2025-05-02T01:07:03.789Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(1)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.7936441-04:00">
+        <Text>2025-05-02T01:07:03.793Z pw:api   locator resolved to &lt;a id="ember82" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.7950303-04:00">
+        <Text>2025-05-02T01:07:03.794Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(2)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.7978035-04:00">
+        <Text>2025-05-02T01:07:03.797Z pw:api   locator resolved to &lt;a id="ember86" href="#/inventory/items" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.7989277-04:00">
+        <Text>2025-05-02T01:07:03.798Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(3)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8022608-04:00">
+        <Text>2025-05-02T01:07:03.801Z pw:api   locator resolved to &lt;a id="ember91" class="ember-view nav-link" href="#/inventory/itemgroups"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8035324-04:00">
+        <Text>2025-05-02T01:07:03.802Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(4)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8062404-04:00">
+        <Text>2025-05-02T01:07:03.805Z pw:api   locator resolved to &lt;a id="ember97" class="ember-view nav-link" href="#/inventory/adjustments"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8072200-04:00">
+        <Text>2025-05-02T01:07:03.806Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(5)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8100078-04:00">
+        <Text>2025-05-02T01:07:03.809Z pw:api   locator resolved to &lt;a id="ember104" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8109534-04:00">
+        <Text>2025-05-02T01:07:03.810Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(6)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8133802-04:00">
+        <Text>2025-05-02T01:07:03.812Z pw:api   locator resolved to &lt;a id="ember108" href="#/contacts" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8145371-04:00">
+        <Text>2025-05-02T01:07:03.814Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(7)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8168843-04:00">
+        <Text>2025-05-02T01:07:03.816Z pw:api   locator resolved to &lt;a id="ember114" href="#/salesorders" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8184716-04:00">
+        <Text>2025-05-02T01:07:03.817Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(8)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8206864-04:00">
+        <Text>2025-05-02T01:07:03.820Z pw:api   locator resolved to &lt;a id="ember121" href="#/packages" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8216785-04:00">
+        <Text>2025-05-02T01:07:03.821Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(9)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8236506-04:00">
+        <Text>2025-05-02T01:07:03.823Z pw:api   locator resolved to &lt;a id="ember125" href="#/shipments" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8248643-04:00">
+        <Text>2025-05-02T01:07:03.824Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(10)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8271313-04:00">
+        <Text>2025-05-02T01:07:03.826Z pw:api   locator resolved to &lt;a id="ember129" href="#/invoices" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8278813-04:00">
+        <Text>2025-05-02T01:07:03.827Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(11)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8299300-04:00">
+        <Text>2025-05-02T01:07:03.829Z pw:api   locator resolved to &lt;a id="ember134" href="#/paymentsreceived" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8307252-04:00">
+        <Text>2025-05-02T01:07:03.830Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(12)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8326114-04:00">
+        <Text>2025-05-02T01:07:03.832Z pw:api   locator resolved to &lt;a id="ember140" href="#/salesreturns" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8337207-04:00">
+        <Text>2025-05-02T01:07:03.833Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(13)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8377794-04:00">
+        <Text>2025-05-02T01:07:03.837Z pw:api   locator resolved to &lt;a id="ember143" href="#/creditnotes" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8384590-04:00">
+        <Text>2025-05-02T01:07:03.838Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(14)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8409348-04:00">
+        <Text>2025-05-02T01:07:03.840Z pw:api   locator resolved to &lt;a id="ember147" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8419015-04:00">
+        <Text>2025-05-02T01:07:03.841Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(15)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8484853-04:00">
+        <Text>2025-05-02T01:07:03.847Z pw:api   locator resolved to &lt;a id="ember151" href="#/vendors" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8492625-04:00">
+        <Text>2025-05-02T01:07:03.848Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(16)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8518177-04:00">
+        <Text>2025-05-02T01:07:03.851Z pw:api   locator resolved to &lt;a id="ember155" href="#/expenses" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8528996-04:00">
+        <Text>2025-05-02T01:07:03.852Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(17)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8562243-04:00">
+        <Text>2025-05-02T01:07:03.855Z pw:api   locator resolved to &lt;a id="ember159" href="#/purchaseorders" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8570149-04:00">
+        <Text>2025-05-02T01:07:03.856Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(18)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8589003-04:00">
+        <Text>2025-05-02T01:07:03.858Z pw:api   locator resolved to &lt;a id="ember163" href="#/purchasereceives" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8598442-04:00">
+        <Text>2025-05-02T01:07:03.859Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(19)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8621426-04:00">
+        <Text>2025-05-02T01:07:03.861Z pw:api   locator resolved to &lt;a id="ember168" href="#/bills" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8629860-04:00">
+        <Text>2025-05-02T01:07:03.862Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(20)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8651906-04:00">
+        <Text>2025-05-02T01:07:03.864Z pw:api   locator resolved to &lt;a id="ember172" href="#/paymentsmade" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8658340-04:00">
+        <Text>2025-05-02T01:07:03.865Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(21)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8694227-04:00">
+        <Text>2025-05-02T01:07:03.868Z pw:api   locator resolved to &lt;a id="ember177" href="#/vendorcredits" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8703088-04:00">
+        <Text>2025-05-02T01:07:03.869Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(22)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8725839-04:00">
+        <Text>2025-05-02T01:07:03.872Z pw:api   locator resolved to &lt;a id="ember181" class="ember-view nav-link" href="#/settings/integrations"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8733437-04:00">
+        <Text>2025-05-02T01:07:03.873Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(23)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8752614-04:00">
+        <Text>2025-05-02T01:07:03.874Z pw:api   locator resolved to &lt;a id="ember184" href="#/reports" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8759656-04:00">
+        <Text>2025-05-02T01:07:03.875Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(24)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8779933-04:00">
+        <Text>2025-05-02T01:07:03.877Z pw:api   locator resolved to &lt;a id="ember187" href="#/documents/inbox" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8809284-04:00">
+        <Text>2025-05-02T01:07:03.880Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(1)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8848716-04:00">
+        <Text>2025-05-02T01:07:03.884Z pw:api   locator resolved to &lt;a id="ember82" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8872251-04:00">
+        <Text>2025-05-02T01:07:03.886Z pw:api attempting click action</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.8872890-04:00">
+        <Text>2025-05-02T01:07:03.887Z pw:api   waiting for element to be visible, enabled and stable</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9190272-04:00">
+        <Text>2025-05-02T01:07:03.918Z pw:api   element is visible, enabled and stable</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9190450-04:00">
+        <Text>2025-05-02T01:07:03.918Z pw:api   scrolling into view if needed</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9195468-04:00">
+        <Text>2025-05-02T01:07:03.919Z pw:api   done scrolling</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9230814-04:00">
+        <Text>2025-05-02T01:07:03.922Z pw:api   performing click action</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9322359-04:00">
+        <Text>2025-05-02T01:07:03.931Z pw:api   click action done</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9322652-04:00">
+        <Text>2025-05-02T01:07:03.931Z pw:api   waiting for scheduled navigations to finish</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9323149-04:00">
+        <Text>2025-05-02T01:07:03.932Z pw:api   navigations have finished</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9401018-04:00">
+        <Text>2025-05-02T01:07:03.939Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").First</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9454581-04:00">
+        <Text>2025-05-02T01:07:03.944Z pw:api   locator resolved to &lt;a id="ember79" href="#/home" class="ember-view active nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9462220-04:00">
+        <Text>2025-05-02T01:07:03.945Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(1)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9481095-04:00">
+        <Text>2025-05-02T01:07:03.947Z pw:api   locator resolved to &lt;a id="ember82" class="ember-view nav-link "&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9489389-04:00">
+        <Text>2025-05-02T01:07:03.948Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(2)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9518127-04:00">
+        <Text>2025-05-02T01:07:03.951Z pw:api   locator resolved to &lt;a id="ember86" href="#/inventory/items" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9530119-04:00">
+        <Text>2025-05-02T01:07:03.952Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(3)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9557598-04:00">
+        <Text>2025-05-02T01:07:03.955Z pw:api   locator resolved to &lt;a id="ember91" class="ember-view nav-link" href="#/inventory/itemgroups"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9570485-04:00">
+        <Text>2025-05-02T01:07:03.956Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(4)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9592353-04:00">
+        <Text>2025-05-02T01:07:03.958Z pw:api   locator resolved to &lt;a id="ember97" class="ember-view nav-link" href="#/inventory/adjustments"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9600127-04:00">
+        <Text>2025-05-02T01:07:03.959Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(5)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9619458-04:00">
+        <Text>2025-05-02T01:07:03.961Z pw:api   locator resolved to &lt;a id="ember104" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9626599-04:00">
+        <Text>2025-05-02T01:07:03.962Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(6)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9647157-04:00">
+        <Text>2025-05-02T01:07:03.964Z pw:api   locator resolved to &lt;a id="ember108" href="#/contacts" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9656280-04:00">
+        <Text>2025-05-02T01:07:03.965Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(7)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9679169-04:00">
+        <Text>2025-05-02T01:07:03.967Z pw:api   locator resolved to &lt;a id="ember114" href="#/salesorders" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9690908-04:00">
+        <Text>2025-05-02T01:07:03.968Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(8)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9723227-04:00">
+        <Text>2025-05-02T01:07:03.971Z pw:api   locator resolved to &lt;a id="ember121" href="#/packages" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9733130-04:00">
+        <Text>2025-05-02T01:07:03.972Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(9)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9756487-04:00">
+        <Text>2025-05-02T01:07:03.975Z pw:api   locator resolved to &lt;a id="ember125" href="#/shipments" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9766247-04:00">
+        <Text>2025-05-02T01:07:03.976Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(10)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9785238-04:00">
+        <Text>2025-05-02T01:07:03.978Z pw:api   locator resolved to &lt;a id="ember129" href="#/invoices" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9792518-04:00">
+        <Text>2025-05-02T01:07:03.978Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(11)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9818236-04:00">
+        <Text>2025-05-02T01:07:03.981Z pw:api   locator resolved to &lt;a id="ember134" href="#/paymentsreceived" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9827034-04:00">
+        <Text>2025-05-02T01:07:03.982Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(12)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9860019-04:00">
+        <Text>2025-05-02T01:07:03.985Z pw:api   locator resolved to &lt;a id="ember140" href="#/salesreturns" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9868378-04:00">
+        <Text>2025-05-02T01:07:03.986Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(13)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9907708-04:00">
+        <Text>2025-05-02T01:07:03.990Z pw:api   locator resolved to &lt;a id="ember143" href="#/creditnotes" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9915845-04:00">
+        <Text>2025-05-02T01:07:03.991Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(14)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9938031-04:00">
+        <Text>2025-05-02T01:07:03.993Z pw:api   locator resolved to &lt;a id="ember147" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9946993-04:00">
+        <Text>2025-05-02T01:07:03.994Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(15)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9965629-04:00">
+        <Text>2025-05-02T01:07:03.996Z pw:api   locator resolved to &lt;a id="ember151" href="#/vendors" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9974807-04:00">
+        <Text>2025-05-02T01:07:03.996Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(16)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:03.9997546-04:00">
+        <Text>2025-05-02T01:07:03.999Z pw:api   locator resolved to &lt;a id="ember155" href="#/expenses" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0007979-04:00">
+        <Text>2025-05-02T01:07:04.000Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(17)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0050177-04:00">
+        <Text>2025-05-02T01:07:04.004Z pw:api   locator resolved to &lt;a id="ember159" href="#/purchaseorders" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0058882-04:00">
+        <Text>2025-05-02T01:07:04.005Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(18)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0077356-04:00">
+        <Text>2025-05-02T01:07:04.007Z pw:api   locator resolved to &lt;a id="ember163" href="#/purchasereceives" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0088735-04:00">
+        <Text>2025-05-02T01:07:04.008Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(19)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0107243-04:00">
+        <Text>2025-05-02T01:07:04.010Z pw:api   locator resolved to &lt;a id="ember168" href="#/bills" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0115960-04:00">
+        <Text>2025-05-02T01:07:04.011Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(20)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0135342-04:00">
+        <Text>2025-05-02T01:07:04.013Z pw:api   locator resolved to &lt;a id="ember172" href="#/paymentsmade" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0143257-04:00">
+        <Text>2025-05-02T01:07:04.013Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(21)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0165542-04:00">
+        <Text>2025-05-02T01:07:04.016Z pw:api   locator resolved to &lt;a id="ember177" href="#/vendorcredits" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0177157-04:00">
+        <Text>2025-05-02T01:07:04.017Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(22)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0223844-04:00">
+        <Text>2025-05-02T01:07:04.021Z pw:api   locator resolved to &lt;a id="ember181" class="ember-view nav-link" href="#/settings/integrations"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0234369-04:00">
+        <Text>2025-05-02T01:07:04.022Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(23)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0290845-04:00">
+        <Text>2025-05-02T01:07:04.028Z pw:api   locator resolved to &lt;a id="ember184" href="#/reports" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0300776-04:00">
+        <Text>2025-05-02T01:07:04.029Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(24)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0322143-04:00">
+        <Text>2025-05-02T01:07:04.031Z pw:api   locator resolved to &lt;a id="ember187" href="#/documents/inbox" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0333814-04:00">
+        <Text>2025-05-02T01:07:04.032Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(4)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0422436-04:00">
+        <Text>2025-05-02T01:07:04.041Z pw:api   locator resolved to &lt;a id="ember97" class="ember-view nav-link" href="#/inventory/adjustments"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0439246-04:00">
+        <Text>2025-05-02T01:07:04.043Z pw:api attempting click action</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0439516-04:00">
+        <Text>2025-05-02T01:07:04.043Z pw:api   waiting for element to be visible, enabled and stable</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0752446-04:00">
+        <Text>2025-05-02T01:07:04.068Z pw:api   element is visible, enabled and stable</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0753585-04:00">
+        <Text>2025-05-02T01:07:04.068Z pw:api   scrolling into view if needed</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0754292-04:00">
+        <Text>2025-05-02T01:07:04.069Z pw:api   done scrolling</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0754389-04:00">
+        <Text>2025-05-02T01:07:04.071Z pw:api   performing click action</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0935836-04:00">
+        <Text>2025-05-02T01:07:04.092Z pw:api   click action done</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0935908-04:00">
+        <Text>2025-05-02T01:07:04.092Z pw:api   waiting for scheduled navigations to finish</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0936500-04:00">
+        <Text>2025-05-02T01:07:04.093Z pw:api   navigations have finished</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.0969901-04:00">
+        <Text>2025-05-02T01:07:04.096Z pw:api waiting for Locator("table[id='vertically-scrolled-table']") to be visible</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.4048225-04:00">
+        <Text>2025-05-02T01:07:04.404Z pw:api   "networkidle" event fired</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.5051091-04:00">
+        <Text>2025-05-02T01:07:04.504Z pw:api   navigated to "https://www.zoho.com/ca/inventory/inventory-software-demo/#/inventory/adjustments?filter_by=AdjustmentDate.All%2CAdjustmentType.All&amp;per_page=50"</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9140919-04:00">
+        <Text>2025-05-02T01:07:04.913Z pw:api   locator resolved to visible &lt;table id="vertically-scrolled-table" class="table zi-table table-hover    "&gt;ΓÇª&lt;/table&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9181192-04:00">
+        <Text>2025-05-02T01:07:04.917Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(2)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9200322-04:00">
+        <Text>2025-05-02T01:07:04.919Z pw:api   locator resolved to &lt;td&gt;6 Aug 2024&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9208062-04:00">
+        <Text>2025-05-02T01:07:04.920Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(3)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9224050-04:00">
+        <Text>2025-05-02T01:07:04.921Z pw:api   locator resolved to &lt;td&gt;ΓÇª&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9230271-04:00">
+        <Text>2025-05-02T01:07:04.922Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(4)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9245343-04:00">
+        <Text>2025-05-02T01:07:04.924Z pw:api   locator resolved to &lt;td class="text-uppercase font-small"&gt;ΓÇª&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9250877-04:00">
+        <Text>2025-05-02T01:07:04.924Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(5)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9266217-04:00">
+        <Text>2025-05-02T01:07:04.926Z pw:api   locator resolved to &lt;td&gt;ADJ-0&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9271171-04:00">
+        <Text>2025-05-02T01:07:04.926Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(6)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9284992-04:00">
+        <Text>2025-05-02T01:07:04.928Z pw:api   locator resolved to &lt;td&gt;value&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9291228-04:00">
+        <Text>2025-05-02T01:07:04.928Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(7)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9308300-04:00">
+        <Text>2025-05-02T01:07:04.930Z pw:api   locator resolved to &lt;td&gt;demouser&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9314614-04:00">
+        <Text>2025-05-02T01:07:04.931Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(8)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9329289-04:00">
+        <Text>2025-05-02T01:07:04.932Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9336093-04:00">
+        <Text>2025-05-02T01:07:04.933Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(9)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9351723-04:00">
+        <Text>2025-05-02T01:07:04.934Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9358090-04:00">
+        <Text>2025-05-02T01:07:04.935Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").First.Locator("td:nth-child(10)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9372825-04:00">
+        <Text>2025-05-02T01:07:04.936Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9382912-04:00">
+        <Text>2025-05-02T01:07:04.938Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(2)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9396674-04:00">
+        <Text>2025-05-02T01:07:04.939Z pw:api   locator resolved to &lt;td&gt;6 Aug 2024&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9402820-04:00">
+        <Text>2025-05-02T01:07:04.939Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(3)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9417161-04:00">
+        <Text>2025-05-02T01:07:04.941Z pw:api   locator resolved to &lt;td&gt;ΓÇª&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9424492-04:00">
+        <Text>2025-05-02T01:07:04.942Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(4)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9437800-04:00">
+        <Text>2025-05-02T01:07:04.943Z pw:api   locator resolved to &lt;td class="text-uppercase font-small"&gt;ΓÇª&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9443888-04:00">
+        <Text>2025-05-02T01:07:04.944Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(5)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9456576-04:00">
+        <Text>2025-05-02T01:07:04.945Z pw:api   locator resolved to &lt;td&gt;ADJ-1&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9464091-04:00">
+        <Text>2025-05-02T01:07:04.946Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(6)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9479616-04:00">
+        <Text>2025-05-02T01:07:04.947Z pw:api   locator resolved to &lt;td&gt;quantity&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9487893-04:00">
+        <Text>2025-05-02T01:07:04.948Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(7)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9500349-04:00">
+        <Text>2025-05-02T01:07:04.949Z pw:api   locator resolved to &lt;td&gt;demouser&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9508425-04:00">
+        <Text>2025-05-02T01:07:04.950Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(8)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9524001-04:00">
+        <Text>2025-05-02T01:07:04.952Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9533696-04:00">
+        <Text>2025-05-02T01:07:04.953Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(9)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9549710-04:00">
+        <Text>2025-05-02T01:07:04.954Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9555867-04:00">
+        <Text>2025-05-02T01:07:04.955Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(1).Locator("td:nth-child(10)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9570262-04:00">
+        <Text>2025-05-02T01:07:04.956Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9577175-04:00">
+        <Text>2025-05-02T01:07:04.957Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(2)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9589438-04:00">
+        <Text>2025-05-02T01:07:04.958Z pw:api   locator resolved to &lt;td&gt;6 Aug 2024&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9597768-04:00">
+        <Text>2025-05-02T01:07:04.959Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(3)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9609729-04:00">
+        <Text>2025-05-02T01:07:04.960Z pw:api   locator resolved to &lt;td&gt;ΓÇª&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9615371-04:00">
+        <Text>2025-05-02T01:07:04.961Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(4)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9627789-04:00">
+        <Text>2025-05-02T01:07:04.962Z pw:api   locator resolved to &lt;td class="text-uppercase font-small"&gt;ΓÇª&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9633094-04:00">
+        <Text>2025-05-02T01:07:04.963Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(5)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9645214-04:00">
+        <Text>2025-05-02T01:07:04.964Z pw:api   locator resolved to &lt;td&gt;ADJ-2&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9650140-04:00">
+        <Text>2025-05-02T01:07:04.964Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(6)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9664877-04:00">
+        <Text>2025-05-02T01:07:04.966Z pw:api   locator resolved to &lt;td&gt;value&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9671378-04:00">
+        <Text>2025-05-02T01:07:04.966Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(7)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9686221-04:00">
+        <Text>2025-05-02T01:07:04.968Z pw:api   locator resolved to &lt;td&gt;demouser&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9694953-04:00">
+        <Text>2025-05-02T01:07:04.969Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(8)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9710831-04:00">
+        <Text>2025-05-02T01:07:04.970Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9718534-04:00">
+        <Text>2025-05-02T01:07:04.971Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(9)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9731367-04:00">
+        <Text>2025-05-02T01:07:04.972Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9737884-04:00">
+        <Text>2025-05-02T01:07:04.973Z pw:api waiting for Locator("table[id='vertically-scrolled-table']").Locator("tbody tr").Nth(2).Locator("td:nth-child(10)")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:04.9754869-04:00">
+        <Text>2025-05-02T01:07:04.975Z pw:api   locator resolved to &lt;td&gt;&lt;/td&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:05.0728119-04:00">
+        <Text>2025-05-02T01:07:05.072Z pw:api navigating to "https://www.zoho.com/ca/inventory/inventory-software-demo/#/home/inventory-dashboard", waiting until "load"</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:05.2778483-04:00">
+        <Text>2025-05-02T01:07:05.277Z pw:api   "commit" event fired</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:05.2778582-04:00">
+        <Text>2025-05-02T01:07:05.277Z pw:api   navigated to "https://www.zoho.com/ca/inventory/inventory-software-demo/#/home/inventory-dashboard"</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:07.1928861-04:00">
+        <Text>2025-05-02T01:07:07.192Z pw:api   "networkidle" event fired</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:07.6230209-04:00">
+        <Text>2025-05-02T01:07:07.622Z pw:api   "domcontentloaded" event fired</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5209663-04:00">
+        <Text>2025-05-02T01:07:08.520Z pw:api   "load" event fired</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5414665-04:00">
+        <Text>2025-05-02T01:07:08.540Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").First</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5441757-04:00">
+        <Text>2025-05-02T01:07:08.543Z pw:api   locator resolved to &lt;a id="ember79" href="#/home" class="ember-view active nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5448629-04:00">
+        <Text>2025-05-02T01:07:08.544Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(1)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5486875-04:00">
+        <Text>2025-05-02T01:07:08.548Z pw:api   locator resolved to &lt;a id="ember82" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5495138-04:00">
+        <Text>2025-05-02T01:07:08.549Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(2)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5543339-04:00">
+        <Text>2025-05-02T01:07:08.553Z pw:api   locator resolved to &lt;a id="ember86" href="#/inventory/items" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5549726-04:00">
+        <Text>2025-05-02T01:07:08.554Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(3)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5573437-04:00">
+        <Text>2025-05-02T01:07:08.557Z pw:api   locator resolved to &lt;a id="ember91" class="ember-view nav-link" href="#/inventory/itemgroups"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5582118-04:00">
+        <Text>2025-05-02T01:07:08.557Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(4)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5599608-04:00">
+        <Text>2025-05-02T01:07:08.559Z pw:api   locator resolved to &lt;a id="ember97" class="ember-view nav-link" href="#/inventory/adjustments"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5605067-04:00">
+        <Text>2025-05-02T01:07:08.560Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(5)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5621983-04:00">
+        <Text>2025-05-02T01:07:08.561Z pw:api   locator resolved to &lt;a id="ember104" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5629379-04:00">
+        <Text>2025-05-02T01:07:08.562Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(6)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5652752-04:00">
+        <Text>2025-05-02T01:07:08.564Z pw:api   locator resolved to &lt;a id="ember108" href="#/contacts" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5661246-04:00">
+        <Text>2025-05-02T01:07:08.565Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(7)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5700154-04:00">
+        <Text>2025-05-02T01:07:08.569Z pw:api   locator resolved to &lt;a id="ember114" href="#/salesorders" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5707229-04:00">
+        <Text>2025-05-02T01:07:08.570Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(8)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5730370-04:00">
+        <Text>2025-05-02T01:07:08.572Z pw:api   locator resolved to &lt;a id="ember121" href="#/packages" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5738753-04:00">
+        <Text>2025-05-02T01:07:08.573Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(9)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5769156-04:00">
+        <Text>2025-05-02T01:07:08.576Z pw:api   locator resolved to &lt;a id="ember125" href="#/shipments" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5776409-04:00">
+        <Text>2025-05-02T01:07:08.577Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(10)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5795014-04:00">
+        <Text>2025-05-02T01:07:08.579Z pw:api   locator resolved to &lt;a id="ember129" href="#/invoices" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5801630-04:00">
+        <Text>2025-05-02T01:07:08.579Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(11)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5820876-04:00">
+        <Text>2025-05-02T01:07:08.581Z pw:api   locator resolved to &lt;a id="ember134" href="#/paymentsreceived" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5827129-04:00">
+        <Text>2025-05-02T01:07:08.582Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(12)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5868652-04:00">
+        <Text>2025-05-02T01:07:08.586Z pw:api   locator resolved to &lt;a id="ember140" href="#/salesreturns" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5876012-04:00">
+        <Text>2025-05-02T01:07:08.587Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(13)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5895898-04:00">
+        <Text>2025-05-02T01:07:08.589Z pw:api   locator resolved to &lt;a id="ember143" href="#/creditnotes" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5904333-04:00">
+        <Text>2025-05-02T01:07:08.590Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(14)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5922525-04:00">
+        <Text>2025-05-02T01:07:08.591Z pw:api   locator resolved to &lt;a id="ember147" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5929383-04:00">
+        <Text>2025-05-02T01:07:08.592Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(15)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5949214-04:00">
+        <Text>2025-05-02T01:07:08.594Z pw:api   locator resolved to &lt;a id="ember151" href="#/vendors" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5954765-04:00">
+        <Text>2025-05-02T01:07:08.595Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(16)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5972741-04:00">
+        <Text>2025-05-02T01:07:08.596Z pw:api   locator resolved to &lt;a id="ember155" href="#/expenses" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.5980142-04:00">
+        <Text>2025-05-02T01:07:08.597Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(17)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6000672-04:00">
+        <Text>2025-05-02T01:07:08.599Z pw:api   locator resolved to &lt;a id="ember159" href="#/purchaseorders" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6010439-04:00">
+        <Text>2025-05-02T01:07:08.600Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(18)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6035445-04:00">
+        <Text>2025-05-02T01:07:08.603Z pw:api   locator resolved to &lt;a id="ember163" href="#/purchasereceives" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6041067-04:00">
+        <Text>2025-05-02T01:07:08.603Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(19)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6059982-04:00">
+        <Text>2025-05-02T01:07:08.605Z pw:api   locator resolved to &lt;a id="ember168" href="#/bills" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6066073-04:00">
+        <Text>2025-05-02T01:07:08.606Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(20)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6081559-04:00">
+        <Text>2025-05-02T01:07:08.607Z pw:api   locator resolved to &lt;a id="ember172" href="#/paymentsmade" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6085815-04:00">
+        <Text>2025-05-02T01:07:08.608Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(21)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6100684-04:00">
+        <Text>2025-05-02T01:07:08.609Z pw:api   locator resolved to &lt;a id="ember177" href="#/vendorcredits" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6105906-04:00">
+        <Text>2025-05-02T01:07:08.610Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(22)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6125299-04:00">
+        <Text>2025-05-02T01:07:08.612Z pw:api   locator resolved to &lt;a id="ember181" class="ember-view nav-link" href="#/settings/integrations"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6131337-04:00">
+        <Text>2025-05-02T01:07:08.612Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(23)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6149446-04:00">
+        <Text>2025-05-02T01:07:08.614Z pw:api   locator resolved to &lt;a id="ember184" href="#/reports" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6156010-04:00">
+        <Text>2025-05-02T01:07:08.615Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(24)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6179257-04:00">
+        <Text>2025-05-02T01:07:08.617Z pw:api   locator resolved to &lt;a id="ember187" href="#/documents/inbox" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6190759-04:00">
+        <Text>2025-05-02T01:07:08.618Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(1)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6217129-04:00">
+        <Text>2025-05-02T01:07:08.621Z pw:api   locator resolved to &lt;a id="ember82" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6247611-04:00">
+        <Text>2025-05-02T01:07:08.622Z pw:api attempting click action</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6247720-04:00">
+        <Text>2025-05-02T01:07:08.622Z pw:api   waiting for element to be visible, enabled and stable</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6514925-04:00">
+        <Text>2025-05-02T01:07:08.650Z pw:api   element is visible, enabled and stable</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6514996-04:00">
+        <Text>2025-05-02T01:07:08.651Z pw:api   scrolling into view if needed</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6521447-04:00">
+        <Text>2025-05-02T01:07:08.651Z pw:api   done scrolling</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6547288-04:00">
+        <Text>2025-05-02T01:07:08.654Z pw:api   performing click action</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6628837-04:00">
+        <Text>2025-05-02T01:07:08.662Z pw:api   click action done</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6628907-04:00">
+        <Text>2025-05-02T01:07:08.662Z pw:api   waiting for scheduled navigations to finish</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6631026-04:00">
+        <Text>2025-05-02T01:07:08.662Z pw:api   navigations have finished</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6664619-04:00">
+        <Text>2025-05-02T01:07:08.665Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").First</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6700878-04:00">
+        <Text>2025-05-02T01:07:08.669Z pw:api   locator resolved to &lt;a id="ember79" href="#/home" class="ember-view active nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6709288-04:00">
+        <Text>2025-05-02T01:07:08.670Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(1)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6733704-04:00">
+        <Text>2025-05-02T01:07:08.672Z pw:api   locator resolved to &lt;a id="ember82" class="ember-view nav-link "&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6739266-04:00">
+        <Text>2025-05-02T01:07:08.673Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(2)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6758512-04:00">
+        <Text>2025-05-02T01:07:08.675Z pw:api   locator resolved to &lt;a id="ember86" href="#/inventory/items" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6765871-04:00">
+        <Text>2025-05-02T01:07:08.676Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(3)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6786691-04:00">
+        <Text>2025-05-02T01:07:08.678Z pw:api   locator resolved to &lt;a id="ember91" class="ember-view nav-link" href="#/inventory/itemgroups"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6801046-04:00">
+        <Text>2025-05-02T01:07:08.679Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(4)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6896526-04:00">
+        <Text>2025-05-02T01:07:08.689Z pw:api   locator resolved to &lt;a id="ember97" class="ember-view nav-link" href="#/inventory/adjustments"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6904649-04:00">
+        <Text>2025-05-02T01:07:08.690Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(5)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6922212-04:00">
+        <Text>2025-05-02T01:07:08.691Z pw:api   locator resolved to &lt;a id="ember104" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6928686-04:00">
+        <Text>2025-05-02T01:07:08.692Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(6)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6944825-04:00">
+        <Text>2025-05-02T01:07:08.694Z pw:api   locator resolved to &lt;a id="ember108" href="#/contacts" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6949157-04:00">
+        <Text>2025-05-02T01:07:08.694Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(7)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6964459-04:00">
+        <Text>2025-05-02T01:07:08.696Z pw:api   locator resolved to &lt;a id="ember114" href="#/salesorders" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6968547-04:00">
+        <Text>2025-05-02T01:07:08.696Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(8)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6986859-04:00">
+        <Text>2025-05-02T01:07:08.698Z pw:api   locator resolved to &lt;a id="ember121" href="#/packages" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.6991696-04:00">
+        <Text>2025-05-02T01:07:08.698Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(9)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7019772-04:00">
+        <Text>2025-05-02T01:07:08.701Z pw:api   locator resolved to &lt;a id="ember125" href="#/shipments" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7025641-04:00">
+        <Text>2025-05-02T01:07:08.702Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(10)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7049165-04:00">
+        <Text>2025-05-02T01:07:08.704Z pw:api   locator resolved to &lt;a id="ember129" href="#/invoices" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7053557-04:00">
+        <Text>2025-05-02T01:07:08.705Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(11)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7071270-04:00">
+        <Text>2025-05-02T01:07:08.706Z pw:api   locator resolved to &lt;a id="ember134" href="#/paymentsreceived" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7077298-04:00">
+        <Text>2025-05-02T01:07:08.707Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(12)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7094174-04:00">
+        <Text>2025-05-02T01:07:08.709Z pw:api   locator resolved to &lt;a id="ember140" href="#/salesreturns" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7101064-04:00">
+        <Text>2025-05-02T01:07:08.709Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(13)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7166446-04:00">
+        <Text>2025-05-02T01:07:08.716Z pw:api   locator resolved to &lt;a id="ember143" href="#/creditnotes" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7173852-04:00">
+        <Text>2025-05-02T01:07:08.717Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(14)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7205708-04:00">
+        <Text>2025-05-02T01:07:08.720Z pw:api   locator resolved to &lt;a id="ember147" class="collapsed ember-view nav-link "&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7213738-04:00">
+        <Text>2025-05-02T01:07:08.721Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(15)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7231277-04:00">
+        <Text>2025-05-02T01:07:08.722Z pw:api   locator resolved to &lt;a id="ember151" href="#/vendors" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7237578-04:00">
+        <Text>2025-05-02T01:07:08.723Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(16)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7257316-04:00">
+        <Text>2025-05-02T01:07:08.725Z pw:api   locator resolved to &lt;a id="ember155" href="#/expenses" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7261967-04:00">
+        <Text>2025-05-02T01:07:08.725Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(17)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7278034-04:00">
+        <Text>2025-05-02T01:07:08.727Z pw:api   locator resolved to &lt;a id="ember159" href="#/purchaseorders" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7284172-04:00">
+        <Text>2025-05-02T01:07:08.728Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(18)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7300281-04:00">
+        <Text>2025-05-02T01:07:08.729Z pw:api   locator resolved to &lt;a id="ember163" href="#/purchasereceives" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7308039-04:00">
+        <Text>2025-05-02T01:07:08.730Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(19)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7324099-04:00">
+        <Text>2025-05-02T01:07:08.732Z pw:api   locator resolved to &lt;a id="ember168" href="#/bills" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7329681-04:00">
+        <Text>2025-05-02T01:07:08.732Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(20)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7373674-04:00">
+        <Text>2025-05-02T01:07:08.736Z pw:api   locator resolved to &lt;a id="ember172" href="#/paymentsmade" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7381731-04:00">
+        <Text>2025-05-02T01:07:08.737Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(21)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7399272-04:00">
+        <Text>2025-05-02T01:07:08.739Z pw:api   locator resolved to &lt;a id="ember177" href="#/vendorcredits" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7404364-04:00">
+        <Text>2025-05-02T01:07:08.740Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(22)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7419779-04:00">
+        <Text>2025-05-02T01:07:08.741Z pw:api   locator resolved to &lt;a id="ember181" class="ember-view nav-link" href="#/settings/integrations"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7428169-04:00">
+        <Text>2025-05-02T01:07:08.742Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(23)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7447158-04:00">
+        <Text>2025-05-02T01:07:08.744Z pw:api   locator resolved to &lt;a id="ember184" href="#/reports" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7453769-04:00">
+        <Text>2025-05-02T01:07:08.745Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(24)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7473793-04:00">
+        <Text>2025-05-02T01:07:08.747Z pw:api   locator resolved to &lt;a id="ember187" href="#/documents/inbox" class="ember-view nav-link"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7479450-04:00">
+        <Text>2025-05-02T01:07:08.747Z pw:api waiting for Locator("div[id='main-nav-tab'] a[id*='ember'][class$='nav-link'], div[id='main-nav-tab']  a[id*='ember'][class$='nav-link ']").Nth(3)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7552886-04:00">
+        <Text>2025-05-02T01:07:08.754Z pw:api   locator resolved to &lt;a id="ember91" class="ember-view nav-link" href="#/inventory/itemgroups"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7643429-04:00">
+        <Text>2025-05-02T01:07:08.763Z pw:api attempting click action</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7643512-04:00">
+        <Text>2025-05-02T01:07:08.763Z pw:api   waiting for element to be visible, enabled and stable</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7853204-04:00">
+        <Text>2025-05-02T01:07:08.784Z pw:api   element is visible, enabled and stable</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7853279-04:00">
+        <Text>2025-05-02T01:07:08.784Z pw:api   scrolling into view if needed</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7860873-04:00">
+        <Text>2025-05-02T01:07:08.785Z pw:api   done scrolling</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.7883588-04:00">
+        <Text>2025-05-02T01:07:08.787Z pw:api   performing click action</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.8110905-04:00">
+        <Text>2025-05-02T01:07:08.810Z pw:api   click action done</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.8110976-04:00">
+        <Text>2025-05-02T01:07:08.810Z pw:api   waiting for scheduled navigations to finish</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.8114429-04:00">
+        <Text>2025-05-02T01:07:08.811Z pw:api   navigations have finished</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:08.8189721-04:00">
+        <Text>2025-05-02T01:07:08.818Z pw:api waiting for Locator("table[id='vertically-scrolled-table']") to be visible</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:09.2214740-04:00">
+        <Text>2025-05-02T01:07:09.220Z pw:api   navigated to "https://www.zoho.com/ca/inventory/inventory-software-demo/#/inventory/itemgroups"</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:09.8058108-04:00">
+        <Text>2025-05-02T01:07:09.805Z pw:api   "networkidle" event fired</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8380307-04:00">
+        <Text>2025-05-02T01:07:11.837Z pw:api waiting for Locator("a[class='dropdown-toggle ember-view     no-caret']")</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8401214-04:00">
+        <Text>2025-05-02T01:07:11.839Z pw:api   locator resolved to &lt;a id="ember276" class="dropdown-toggle ember-view     no-caret"&gt;ΓÇª&lt;/a&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8407668-04:00">
+        <Text>2025-05-02T01:07:11.840Z pw:api attempting click action</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8407749-04:00">
+        <Text>2025-05-02T01:07:11.840Z pw:api   waiting for element to be visible, enabled and stable</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8503410-04:00">
+        <Text>2025-05-02T01:07:11.849Z pw:api   element is visible, enabled and stable</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8503492-04:00">
+        <Text>2025-05-02T01:07:11.849Z pw:api   scrolling into view if needed</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8507668-04:00">
+        <Text>2025-05-02T01:07:11.850Z pw:api   done scrolling</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8527924-04:00">
+        <Text>2025-05-02T01:07:11.852Z pw:api   performing click action</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8609254-04:00">
+        <Text>2025-05-02T01:07:11.860Z pw:api   click action done</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8609317-04:00">
+        <Text>2025-05-02T01:07:11.860Z pw:api   waiting for scheduled navigations to finish</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8612253-04:00">
+        <Text>2025-05-02T01:07:11.860Z pw:api   navigations have finished</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8642029-04:00">
+        <Text>2025-05-02T01:07:11.863Z pw:api waiting for Locator("div[class='dropdown-menu show  scrollmenu listview-filter'] button[class^='dropdown-item']").First</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8659659-04:00">
+        <Text>2025-05-02T01:07:11.865Z pw:api   locator resolved to &lt;button type="button" data-ember-action="" data-ember-action-277="277" class="dropdown-item item-focus"&gt;All Item Groups&lt;/button&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8663743-04:00">
+        <Text>2025-05-02T01:07:11.866Z pw:api waiting for Locator("div[class='dropdown-menu show  scrollmenu listview-filter'] button[class^='dropdown-item']").Nth(1)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8689122-04:00">
+        <Text>2025-05-02T01:07:11.868Z pw:api   locator resolved to &lt;button type="button" data-ember-action="" class="dropdown-item" data-ember-action-278="278"&gt;Active Item Groups&lt;/button&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8695355-04:00">
+        <Text>2025-05-02T01:07:11.869Z pw:api waiting for Locator("div[class='dropdown-menu show  scrollmenu listview-filter'] button[class^='dropdown-item']").Nth(2)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8711025-04:00">
+        <Text>2025-05-02T01:07:11.870Z pw:api   locator resolved to &lt;button type="button" data-ember-action="" class="dropdown-item" data-ember-action-279="279"&gt;Inactive Item Groups&lt;/button&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8719344-04:00">
+        <Text>2025-05-02T01:07:11.871Z pw:api waiting for Locator("div[class='dropdown-menu show  scrollmenu listview-filter'] button[class^='dropdown-item']").Nth(2)</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8744769-04:00">
+        <Text>2025-05-02T01:07:11.874Z pw:api   locator resolved to &lt;button type="button" data-ember-action="" class="dropdown-item" data-ember-action-279="279"&gt;Inactive Item Groups&lt;/button&gt;</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8751388-04:00">
+        <Text>2025-05-02T01:07:11.874Z pw:api attempting click action</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.8751616-04:00">
+        <Text>2025-05-02T01:07:11.874Z pw:api   waiting for element to be visible, enabled and stable</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.9009633-04:00">
+        <Text>2025-05-02T01:07:11.900Z pw:api   element is visible, enabled and stable</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.9009742-04:00">
+        <Text>2025-05-02T01:07:11.900Z pw:api   scrolling into view if needed</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.9013624-04:00">
+        <Text>2025-05-02T01:07:11.901Z pw:api   done scrolling</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.9031815-04:00">
+        <Text>2025-05-02T01:07:11.902Z pw:api   performing click action</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.9197405-04:00">
+        <Text>2025-05-02T01:07:11.919Z pw:api   navigated to "https://www.zoho.com/ca/inventory/inventory-software-demo/#/inventory/itemgroups?filter_by=Status.Inactive"</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.9365556-04:00">
+        <Text>2025-05-02T01:07:11.936Z pw:api   click action done</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.9365624-04:00">
+        <Text>2025-05-02T01:07:11.936Z pw:api   waiting for scheduled navigations to finish</Text>
+      </RunInfo>
+      <RunInfo computerName="DESKTOP-RSFFHJT" outcome="Warning" timestamp="2025-05-01T21:07:11.9375251-04:00">
+        <Text>2025-05-02T01:07:11.937Z pw:api   navigations have finished</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+</TestRun>

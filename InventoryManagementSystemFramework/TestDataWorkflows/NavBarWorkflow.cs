@@ -1,4 +1,9 @@
-public class NavBarWorkflow
+using InventoryManagementSystemFramework.TestDataModels;
+
+namespace InventoryManagementSystemFramework.TestDataWorkflows
 {
-    public SideBarNavDataModel SideBarNav { get; set; }
+    public class NavBarWorkflow
+    {
+        public SideBarNavDataModel SideBarNav { get; set; }
+    }
 }

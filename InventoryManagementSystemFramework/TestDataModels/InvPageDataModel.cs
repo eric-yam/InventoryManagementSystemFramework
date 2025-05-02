@@ -1,4 +1,7 @@
-public class InvPageDataModel
+namespace InventoryManagementSystemFramework.TestDataModels
 {
-    public string AddedInvItemKey { get; set; }
+    public class InvPageDataModel
+    {
+        public string AddedInvItemKey { get; set; }
+    }
 }

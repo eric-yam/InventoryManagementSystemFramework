@@ -1,11 +1,14 @@
 using Microsoft.Playwright;
 
-public abstract class BasePage
+namespace InventoryManagementSystemFramework.Pages
 {
-    public IPage page;
-
-    public BasePage(IPage page)
+    public abstract class BasePage
     {
-        this.page = page;
+        public IPage page;
+
+        public BasePage(IPage page)
+        {
+            this.page = page;
+        }
     }
 }

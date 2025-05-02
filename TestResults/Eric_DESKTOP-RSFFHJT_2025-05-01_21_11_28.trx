@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="5b3277a8-4ce6-4f1b-aeaa-e84da0d1d61c" name="Eric@DESKTOP-RSFFHJT 2025-05-01 21:11:28" runUser="DESKTOP-RSFFHJT\Eric" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-05-01T21:11:28.1339868-04:00" queuing="2025-05-01T21:11:28.1339869-04:00" start="2025-05-01T21:10:37.7302437-04:00" finish="2025-05-01T21:11:28.1341193-04:00" />
+  <TestSettings name="default" id="3514586c-a364-4f62-9027-1ab2137d908a">
+    <Deployment runDeploymentRoot="Eric_DESKTOP-RSFFHJT_2025-05-01_21_11_28" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="c499e5a0-6384-4a4e-8282-5d3d8a38e22a" testId="abe8963b-8411-9f30-23e2-34429e1653fd" testName="Test_Inventory_Items()" computerName="DESKTOP-RSFFHJT" duration="00:00:00.0011220" startTime="2025-05-01T21:11:28.0653172-04:00" endTime="2025-05-01T21:11:28.0664003-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c499e5a0-6384-4a4e-8282-5d3d8a38e22a">
+      <Output>
+        <ErrorInfo>
+          <Message>System.Reflection.TargetInvocationException : Exception has been thrown by the target of an invocation.&#xD;
+  ----&gt; System.IO.DirectoryNotFoundException : Could not find a part of the path 'C:\Users\Eric\Documents\vscode-repos\InventoryManagementSystemFramework\InventoryManagementSystemFramework\bin\Debug\net9.0\Resources\nav_bar_workflow_test_data.json'.</Message>
+          <StackTrace>   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)&#xD;
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)&#xD;
+   at NUnit.Framework.Internal.Extensions.MethodInfoExtensions.InvokeMaybeAwait[TReturn](MethodInfo m, Object[] methodArgs)&#xD;
+   at NUnit.Framework.TestCaseSourceAttribute.GetTestCaseSource(IMethodInfo method)&#xD;
+   at NUnit.Framework.TestCaseSourceAttribute.&lt;&gt;c__DisplayClass20_0.&lt;GetTestCasesFor&gt;b__0()&#xD;
+   at NUnit.Framework.Internal.ContextUtils.&lt;&gt;c__DisplayClass1_0`1.&lt;DoIsolated&gt;b__0(Object _)&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+--- End of stack trace from previous location ---&#xD;
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)&#xD;
+   at NUnit.Framework.Internal.ContextUtils.DoIsolated(ContextCallback callback, Object state)&#xD;
+   at NUnit.Framework.Internal.ContextUtils.DoIsolated[T](Func`1 func)&#xD;
+   at NUnit.Framework.TestCaseSourceAttribute.GetTestCasesFor(IMethodInfo method)&#xD;
+--DirectoryNotFoundException&#xD;
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)&#xD;
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)&#xD;
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)&#xD;
+   at System.IO.Strategies.FileStreamHelpers.ChooseStrategyCore(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize, Nullable`1 unixCreateMode)&#xD;
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)&#xD;
+   at System.IO.File.ReadAllText(String path, Encoding encoding)&#xD;
+   at TestDataProvider.NavBarWorkflowDataProvider() in C:\Users\Eric\Documents\vscode-repos\InventoryManagementSystemFramework\InventoryManagementSystemFramework\TestDataProviders\TestDataProvider.cs:line 32&#xD;
+   at InvokeStub_TestDataProvider.NavBarWorkflowDataProvider(Object, Object, IntPtr*)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="Test_Inventory_Items()" storage="c:\users\eric\documents\vscode-repos\inventorymanagementsystemframework\inventorymanagementsystemframework\bin\debug\net9.0\inventorymanagementsystemframework.dll" id="abe8963b-8411-9f30-23e2-34429e1653fd">
+      <Execution id="c499e5a0-6384-4a4e-8282-5d3d8a38e22a" />
+      <TestMethod codeBase="C:\Users\Eric\Documents\vscode-repos\InventoryManagementSystemFramework\InventoryManagementSystemFramework\bin\Debug\net9.0\InventoryManagementSystemFramework.dll" adapterTypeName="executor://nunit3testexecutor/" className="InventoryTests" name="Test_Inventory_Items()" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="abe8963b-8411-9f30-23e2-34429e1653fd" executionId="c499e5a0-6384-4a4e-8282-5d3d8a38e22a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" passed="0" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 4.6.0.0: Test execution started&#xD;
+Debugging selected tests in C:\Users\Eric\Documents\vscode-repos\InventoryManagementSystemFramework\InventoryManagementSystemFramework\bin\Debug\net9.0\InventoryManagementSystemFramework.dll&#xD;
+   NUnit3TestExecutor discovered 1 of 1 NUnit test cases using Current Discovery mode, Non-Explicit run&#xD;
+NUnit Adapter 4.6.0.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

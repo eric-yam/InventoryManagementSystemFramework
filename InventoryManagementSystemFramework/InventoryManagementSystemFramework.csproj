@@ -19,6 +19,9 @@
 
   <ItemGroup>
     <Using Include="NUnit.Framework" />
+      <None Update="Resources\*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>

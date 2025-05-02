@@ -1,4 +1,9 @@
-public class HomeDashBoardWorkflow
+using InventoryManagementSystemFramework.TestDataModels;
+
+namespace InventoryManagementSystemFramework.TestDataWorkflows
 {
-    public HomePageDataModel HomePage { get; set; }
+    public class HomeDashBoardWorkflow
+    {
+        public HomePageDataModel HomePage { get; set; }
+    }
 }
