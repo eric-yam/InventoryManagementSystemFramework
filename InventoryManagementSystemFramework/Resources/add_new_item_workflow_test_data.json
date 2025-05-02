@@ -1,0 +1,21 @@
+[
+    {
+        "SideBarNav" : 
+        {
+            "SidebarNavSteps" : ["Inventory", "Items"]
+        }, 
+        "NewInvItemPage" : 
+        {
+            "InventoryItemType" : "goods",
+            "Name" : "TemporaryName",
+            "Sku" : "item 99 sku",
+            "Unit" : "PAIRS",
+            "SellPrice" : 205.00,
+            "CostPrice" : 150.00
+        },
+        "InventoryPage" : 
+        {
+            "AddedInvItemKey" : "TemporaryName|item 99 sku|Goods"
+        }
+    }
+]

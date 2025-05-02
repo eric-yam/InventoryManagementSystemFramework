@@ -1,0 +1,20 @@
+[
+    {
+        "SideBarNav" : 
+        {
+            "SidebarNavSteps" : ["Inventory", "Items", "Item Groups", "Inventory Adjustments"]
+        }
+    },
+    {
+        "SideBarNav" : 
+        {
+            "SidebarNavSteps" : ["Sales", "Customers", "Sales Orders", "Packages", "Shipments", "Invoices", "Payments Received", "Payments Received", "Sales Returns", "Credit Notes"]
+        }
+    },
+    {
+        "SideBarNav" : 
+        {
+            "SidebarNavSteps" : ["Purchases", "Vendors", "Expenses", "Purchase Orders", "Purchase Receives", "Bills", "Payments Made", "Vendor Credits"]
+        }
+    }
+]

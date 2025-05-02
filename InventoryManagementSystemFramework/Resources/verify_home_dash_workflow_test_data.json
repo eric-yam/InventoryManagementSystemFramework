@@ -1,0 +1,11 @@
+[
+    {
+        "HomePage" :
+        {
+            "CurrentUser" : "Demo User",
+            "CurrentOrg" : "Demo Org",
+            "QuantityInHand" : 12746.00,
+            "QuantityToBeReceived" : 62.00
+        }
+    }
+]

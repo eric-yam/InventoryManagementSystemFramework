@@ -1,0 +1,12 @@
+[
+    {
+    "HomePage" : {
+        "QuantityInHand" :  1,
+        "QuantityTobeReceived" : 2,
+        "SalesToBePacked" : 3,
+        "SalesToBePicked" : 4, 
+        "SalesToBeDelivered": 5,
+        "SalesToBeInvoiced" : 6
+        }
+    }
+]
