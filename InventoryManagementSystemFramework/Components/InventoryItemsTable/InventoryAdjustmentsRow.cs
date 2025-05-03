@@ -55,6 +55,4 @@ public class InventoryAdjustmentsRow : BaseComponent
 
     public string GetLastModifiedDate() { return this.lastModifiedTime; }
 
-
-
 }

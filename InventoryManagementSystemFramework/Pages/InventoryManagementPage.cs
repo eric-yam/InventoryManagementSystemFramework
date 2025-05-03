@@ -1,21 +1,24 @@
 using InventoryManagementSystemFramework.Pages;
 using Microsoft.Playwright;
 
-public abstract class InventoryManagementPage : BasePage
+namespace InventoryManagementSystemFramework.Pages.InventoryPage
 {
-    protected ILocator NewItem() => this.page.Locator("button[class='btn btn-primary']");
-
-    protected ILocator ExitItemOverview() => this.page.Locator("span[class='close-entity close-details ms-4'] path");
-
-    public InventoryManagementPage(IPage page) : base(page) { }    
-
-    public async Task ClickNewItem()
+    public abstract class InventoryManagementPage : BasePage
     {
-        await this.NewItem().ClickAsync();
-    }
+        protected ILocator NewItem() => this.page.Locator("button[class='btn btn-primary']");
 
-    public async Task ClickExitItemOverview()
-    {
-        await this.ExitItemOverview().ClickAsync();
+        protected ILocator ExitItemOverview() => this.page.Locator("span[class='close-entity close-details ms-4'] path");
+
+        public InventoryManagementPage(IPage page) : base(page) { }
+
+        public async Task ClickNewItem()
+        {
+            await this.NewItem().ClickAsync();
+        }
+
+        public async Task ClickExitItemOverview()
+        {
+            await this.ExitItemOverview().ClickAsync();
+        }
     }
 }

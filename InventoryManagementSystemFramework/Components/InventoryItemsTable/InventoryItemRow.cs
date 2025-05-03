@@ -1,6 +1,6 @@
 using Microsoft.Playwright;
 
-public class InventoryItemRow : BaseComponent
+public class InventoryItemRow : TableRow
 {
     private ILocator checkbox;
     private string? name;
@@ -11,7 +11,7 @@ public class InventoryItemRow : BaseComponent
 
     public InventoryItemRow(IPage page) : base(page) { }
 
-    public async Task InitializeRow(ILocator rowLocator)
+    public override async Task InitializeRow(ILocator rowLocator)
     {
         this.checkbox = rowLocator.Locator("input[type='checkbox']");
         this.name = await rowLocator.Locator("a").TextContentAsync();
@@ -21,7 +21,7 @@ public class InventoryItemRow : BaseComponent
         this.rate = await rowLocator.Locator("td[class='  text-end']").TextContentAsync();
     }
 
-    public string CompositeKey()
+    public override string CompositeKey()
     {
         return $"{this.GetName()}|{this.GetSKU()}|{this.GetItemType()}";
     }
