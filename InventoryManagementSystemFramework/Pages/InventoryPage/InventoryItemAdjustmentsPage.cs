@@ -2,7 +2,7 @@ using Microsoft.Playwright;
 
 namespace InventoryManagementSystemFramework.Pages.InventoryPage
 {
-    public class InventoryItemAdjustmentsPage : BasePage
+    public class InventoryItemAdjustmentsPage : InventoryManagementPage
     {
         private InventoryAdjustmentsTable table;
         public InventoryItemAdjustmentsPage(IPage page) : base(page)
@@ -15,6 +15,11 @@ namespace InventoryManagementSystemFramework.Pages.InventoryPage
             InventoryItemAdjustmentsPage iiap = new InventoryItemAdjustmentsPage(page);
             iiap.table = await InventoryAdjustmentsTable.CreateAsync(page);
             return iiap;
+        }
+
+        public InventoryAdjustmentsRow GetTableValue(string key)
+        {
+            return this.table.GetTableValue(key);
         }
     }
 }

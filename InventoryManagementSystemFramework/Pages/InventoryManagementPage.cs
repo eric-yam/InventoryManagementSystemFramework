@@ -1,5 +1,4 @@
 using InventoryManagementSystemFramework.Pages;
-using InventoryManagementSystemFramework.Pages.InventoryPage;
 using Microsoft.Playwright;
 
 public abstract class InventoryManagementPage : BasePage
@@ -8,11 +7,7 @@ public abstract class InventoryManagementPage : BasePage
 
     protected ILocator ExitItemOverview() => this.page.Locator("span[class='close-entity close-details ms-4'] path");
 
-    private InventoryItemsTable table;
-    public InventoryManagementPage(IPage page) : base(page)
-    {
-        this.table = new InventoryItemsTable(page);
-    }
+    public InventoryManagementPage(IPage page) : base(page) { }    
 
     public async Task ClickNewItem()
     {
@@ -22,10 +17,5 @@ public abstract class InventoryManagementPage : BasePage
     public async Task ClickExitItemOverview()
     {
         await this.ExitItemOverview().ClickAsync();
-    }
-
-    public InventoryItemRow GetTableValue(string key)
-    {
-        return this.table.GetTableValue(key);
     }
 }

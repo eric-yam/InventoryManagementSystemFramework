@@ -6,7 +6,7 @@ namespace InventoryManagementSystemFramework.Pages.InventoryPage
         private InventoryItemsTable table;
         private InventoryItemsPage(IPage page) : base(page)
         {
-            this.table = new InventoryItemsTable(page);            
+            this.table = new InventoryItemsTable(page);
         }
 
         public static async Task<InventoryItemsPage> CreateAsync(IPage page)
@@ -14,6 +14,11 @@ namespace InventoryManagementSystemFramework.Pages.InventoryPage
             InventoryItemsPage iip = new InventoryItemsPage(page);
             iip.table = await InventoryItemsTable.CreateAsync(page);//double check 
             return iip;
+        }
+
+        public InventoryItemRow GetTableValue(string key)
+        {
+            return this.table.GetTableValue(key);
         }
     }
 }

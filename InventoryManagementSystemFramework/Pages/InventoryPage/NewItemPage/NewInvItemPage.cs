@@ -1,6 +1,6 @@
 using Microsoft.Playwright;
 
-namespace InventoryManagementSystemFramework.Pages.InventoryPage
+namespace InventoryManagementSystemFramework.Pages.InventoryPage.NewInvItemPage
 {
     public class NewInvItemPage : BasePage
     {

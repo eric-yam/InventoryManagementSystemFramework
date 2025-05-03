@@ -1,7 +1,9 @@
 using PlaywrightPractice.Tests;
 using InventoryManagementSystemFramework.TestDataProviders;
 using InventoryManagementSystemFramework.Pages.InventoryPage;
+using InventoryManagementSystemFramework.Pages.InventoryPage.NewInvItemPage;
 using InventoryManagementSystemFramework.TestDataWorkflows;
+
 
 namespace InventoryManagementSystemFramework.Tests
 {

@@ -3,7 +3,7 @@ using Microsoft.Playwright;
 
 namespace InventoryManagementSystemFramework.Pages.InventoryPage
 {
-    public class InventoryItemGroupPage : BasePage
+    public class InventoryItemGroupPage : InventoryManagementPage
     {
         private ILocator GroupDropdown() => this.page.Locator("a[class='dropdown-toggle ember-view     no-caret']");
         private ILocator DropdownMenu() => this.page.Locator("div[class='dropdown-menu show  scrollmenu listview-filter'] button[class^='dropdown-item']");
@@ -34,6 +34,11 @@ namespace InventoryManagementSystemFramework.Pages.InventoryPage
                     break;
                 }
             }
+        }
+
+        public InventoryItemGroupsRow GetTableValue(string key)
+        {
+            return this.table.GetTableValue(key);
         }
     }
 }
