@@ -24,8 +24,11 @@ public class SideBar : BaseComponent
         foreach (var locator in navigationLinks)
         {
             string? s = await locator.TextContentAsync();
-            string result = s.Trim(charsToRemove);
-            sideBarLocatorsDictionary.Add(result, locator);
+            if (s != null)
+            {
+                string result = s.Trim(charsToRemove);
+                sideBarLocatorsDictionary.Add(result, locator);
+            }
         }
     }
 
