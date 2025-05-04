@@ -4,23 +4,18 @@ namespace InventoryManagementSystemFramework.Pages.InventoryPage
 {
     public class InventoryItemsPage : InventoryManagementPage
     {
-        private InventoryManagementTable table;        
-
-        private InventoryItemsPage(IPage page) : base(page)
-        {
-            this.table = new InventoryManagementTable(page, TableRowFactory.CreateInventoryItemTableRow);
-        }
+        private InventoryItemsPage(IPage page) : base(page) { }
 
         public static async Task<InventoryItemsPage> CreateAsync(IPage page)
         {
             InventoryItemsPage iip = new InventoryItemsPage(page);
-            await iip.table.InitializeTable();            
+            await iip.table.InitializeTable();
             return iip;
         }
 
-        public TableRow GetTableValue(string key)
+        public override Func<IPage, ILocator, Task<TableRow>> GetRowFactoryMethodReference()
         {
-            return this.table.GetTableValue(key);
+            return TableRowFactory.CreateInventoryItemTableRow;
         }
     }
 }

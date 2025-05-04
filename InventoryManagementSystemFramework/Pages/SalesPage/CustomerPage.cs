@@ -1,13 +1,10 @@
 using InventoryManagementSystemFramework.Pages;
+using InventoryManagementSystemFramework.Pages.InventoryPage;
 using Microsoft.Playwright;
 
-public class CustomerPage : BasePage
+public class CustomerPage : InventoryManagementPage
 {
-    private InventoryManagementTable table;
-    public CustomerPage(IPage page) : base(page)
-    {
-        this.table = new InventoryManagementTable(page, TableRowFactory.CreateCustomerRow);
-    }
+    public CustomerPage(IPage page) : base(page) { }
 
     public static async Task<CustomerPage> CreateAsync(IPage page)
     {
@@ -16,8 +13,8 @@ public class CustomerPage : BasePage
         return customerPage;
     }
 
-    public TableRow GetTableValue(string key)
+    public override Func<IPage, ILocator, Task<TableRow>> GetRowFactoryMethodReference()
     {
-        return this.table.GetTableValue(key);
+        return TableRowFactory.CreateCustomerRow;
     }
 }

@@ -9,7 +9,13 @@ namespace InventoryManagementSystemFramework.Pages.InventoryPage
 
         protected ILocator ExitItemOverview() => this.page.Locator("span[class='close-entity close-details ms-4'] path");
 
-        public InventoryManagementPage(IPage page) : base(page) { }
+        protected InventoryManagementTable table;
+        public InventoryManagementPage(IPage page) : base(page)
+        {            
+            this.table = new InventoryManagementTable(page, this.GetRowFactoryMethodReference());
+        }
+
+        public abstract Func<IPage, ILocator, Task<TableRow>> GetRowFactoryMethodReference();
 
         public async Task ClickNewItem()
         {
@@ -19,6 +25,11 @@ namespace InventoryManagementSystemFramework.Pages.InventoryPage
         public async Task ClickExitItemOverview()
         {
             await this.ExitItemOverview().ClickAsync();
+        }
+
+        public TableRow GetTableValue(string key)
+        {
+            return this.table.GetTableValue(key);
         }
     }
 }
