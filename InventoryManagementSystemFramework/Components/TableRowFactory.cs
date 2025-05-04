@@ -22,4 +22,11 @@ public class TableRowFactory
         await iar.InitializeRow(rowLocator);
         return iar;
     }
+
+    public static async Task<TableRow> CreateCustomerRow(IPage page, ILocator rowLocator)
+    {
+        CustomerTableRow ctr = new CustomerTableRow(page);
+        await ctr.InitializeRow(rowLocator);
+        return ctr;
+    }
 }
