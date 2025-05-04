@@ -29,4 +29,10 @@ public class TableRowFactory
         await ctr.InitializeRow(rowLocator);
         return ctr;
     }
+    public static async Task<TableRow> CreateSalesOrderRow(IPage page, ILocator rowLocator)
+    {
+        SalesOrderTableRow sotr = new SalesOrderTableRow(page);
+        await sotr.InitializeRow(rowLocator);
+        return sotr;
+    }
 }
