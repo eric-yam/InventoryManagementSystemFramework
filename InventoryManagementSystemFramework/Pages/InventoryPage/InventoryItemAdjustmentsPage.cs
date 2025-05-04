@@ -5,12 +5,16 @@ namespace InventoryManagementSystemFramework.Pages.InventoryPage
     public class InventoryItemAdjustmentsPage : InventoryManagementPage
     {
         private InventoryManagementTable table;
-        public InventoryItemAdjustmentsPage(IPage page) : base(page) { }
+
+        private InventoryItemAdjustmentsPage(IPage page) : base(page)
+        {
+            this.table = new InventoryManagementTable(this.page, TableRowFactory.CreateInventoryAdjustmentRow);
+        }
 
         public static async Task<InventoryItemAdjustmentsPage> CreateAsync(IPage page)
         {
             InventoryItemAdjustmentsPage iiap = new InventoryItemAdjustmentsPage(page);
-            iiap.table = await InventoryManagementTable.CreateAsync(page, TableRowFactory.CreateInventoryAdjustmentRow);
+            await iiap.table.InitializeTable();            
             return iiap;
         }
 

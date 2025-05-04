@@ -14,13 +14,6 @@ public class InventoryManagementTable : BaseComponent
         this.ItemsTable = new Dictionary<string, TableRow>();
     }
 
-    public static async Task<InventoryManagementTable> CreateAsync(IPage page, Func<IPage, ILocator, Task<TableRow>> methodReference)
-    {
-        InventoryManagementTable iit = new InventoryManagementTable(page, methodReference);
-        await iit.InitializeTable();
-        return iit;
-    }
-
     public async Task InitializeTable()
     {
         this.ItemsTable = new Dictionary<string, TableRow>();
@@ -42,7 +35,7 @@ public class InventoryManagementTable : BaseComponent
         foreach (var rowLocator in rowList)
         {
             string? s = await rowLocator.TextContentAsync();
-            if (!s.Equals("No Records Found"))
+            if (s != null && !s.Equals("No Records Found"))
             {
                 TableRow tableRow = await this.rowFactoryMethodReference(this.page, rowLocator);
 
