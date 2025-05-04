@@ -2,7 +2,7 @@ using Microsoft.Playwright;
 
 public class InventoryAdjustmentsRow : TableRow
 {
-    private ILocator checkbox;
+    private ILocator? checkbox;
     private string? date;
     private string? desc;
     private string? status;
@@ -35,23 +35,23 @@ public class InventoryAdjustmentsRow : TableRow
         return $"{this.GetDate()}|{this.GetRefNum()}";
     }
 
-    public async Task ClickCheckbox() { await this.checkbox.ClickAsync(); }
+    public async Task ClickCheckbox() { if (this.checkbox != null) { await this.checkbox.ClickAsync(); } }
 
-    public string GetDate() { return this.date; }
+    public string GetDate() { if (this.date == null) { return ""; } else { return this.date; } }
 
-    public string GetDesc() { return this.desc; }
+    public string GetDesc() { if (this.desc == null) { return ""; } else { return this.desc; } }
 
-    public string GetStatus() { return this.status; }
+    public string GetStatus() { if (this.status == null) { return ""; } else { return this.status; } }
 
-    public string GetRefNum() { return this.refNum; }
+    public string GetRefNum() { if (this.refNum == null) { return ""; } else { return this.refNum; } }
 
-    public string GetItemType() { return this.type; }
+    public string GetItemType() { if (this.type == null) { return ""; } else { return this.type; } }
 
-    public string GetCreatedBy() { return this.createdBy; }
+    public string GetCreatedBy() { if (this.createdBy == null) { return ""; } else { return this.createdBy; } }
 
-    public string GetCreatedTime() { return this.createdTime; }
+    public string GetCreatedTime() { if (createdTime == null) { return ""; } else { return createdTime; } }
 
-    public string GetLastModifiedBy() { return this.lastModifiedBy; }
+    public string GetLastModifiedBy() { if (this.lastModifiedBy == null) { return ""; } else { return this.lastModifiedBy; } }
 
-    public string GetLastModifiedDate() { return this.lastModifiedTime; }
+    public string GetLastModifiedDate() { if (this.lastModifiedTime == null) { return ""; } else { return this.lastModifiedTime; } }
 }

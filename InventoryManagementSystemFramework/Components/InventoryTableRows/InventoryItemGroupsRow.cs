@@ -25,12 +25,15 @@ public class InventoryItemGroupsRow : TableRow
     }
     public async Task CheckCheckbox()
     {
-        await this.checkbox.ClickAsync();
+        if (this.checkbox != null)
+        {
+            await this.checkbox.ClickAsync();
+        }
     }
-    public string GetName() { return this.name; }
-    public string GetSKU() { return this.sku; }
-    public string GetStockOnHand() { return this.stockOnHand; }
-    public string GetReorderPoint() { return this.reorderPoint; }
+    public string GetName() { if (this.name == null) { return ""; } else { return this.name; } }
+    public string GetSKU() { if (this.sku == null) { return ""; } else { return this.sku; } }
+    public string GetStockOnHand() { if (this.stockOnHand == null) { return ""; } else { return this.stockOnHand; } }
+    public string GetReorderPoint() { if (this.reorderPoint == null) { return ""; } else { return this.reorderPoint; } }
 }
 
 
