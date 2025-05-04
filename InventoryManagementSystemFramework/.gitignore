@@ -399,4 +399,4 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 
-..\TestResults\*.trx
+../TestResults/*.trx
