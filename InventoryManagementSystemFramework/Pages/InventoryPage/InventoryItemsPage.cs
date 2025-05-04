@@ -4,7 +4,7 @@ namespace InventoryManagementSystemFramework.Pages.InventoryPage
 {
     public class InventoryItemsPage : InventoryManagementPage
     {
-        private InventoryManagementTable? table;
+        private InventoryManagementTable table;
 
         private InventoryItemsPage(IPage page) : base(page) { }
 

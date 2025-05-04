@@ -1,6 +1,6 @@
 using Microsoft.Playwright;
 
-public class InventoryAdjustmentsRow : BaseComponent
+public class InventoryAdjustmentsRow : TableRow
 {
     private ILocator checkbox;
     private string? date;
@@ -15,7 +15,7 @@ public class InventoryAdjustmentsRow : BaseComponent
 
     public InventoryAdjustmentsRow(IPage page) : base(page) { }
 
-    public async Task InitializeRow(ILocator rowLocator)
+    public override async Task InitializeRow(ILocator rowLocator)
     {
         this.checkbox = rowLocator.Locator("td:nth-child(1)");
         this.date = await rowLocator.Locator("td:nth-child(2)").TextContentAsync();
@@ -30,7 +30,7 @@ public class InventoryAdjustmentsRow : BaseComponent
 
     }
 
-    public string CompositeKey()
+    public override string CompositeKey()
     {
         return $"{this.GetDate()}|{this.GetRefNum()}";
     }
@@ -54,5 +54,4 @@ public class InventoryAdjustmentsRow : BaseComponent
     public string GetLastModifiedBy() { return this.lastModifiedBy; }
 
     public string GetLastModifiedDate() { return this.lastModifiedTime; }
-
 }

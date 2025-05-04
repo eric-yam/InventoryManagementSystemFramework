@@ -1,6 +1,6 @@
 using Microsoft.Playwright;
 
-public class InventoryItemGroupsRow : BaseComponent
+public class InventoryItemGroupsRow : TableRow
 {
     private ILocator? checkbox;
     private string? name;
@@ -8,11 +8,9 @@ public class InventoryItemGroupsRow : BaseComponent
     private string? stockOnHand;
     private string? reorderPoint;
 
-
-
     public InventoryItemGroupsRow(IPage page) : base(page) { }
 
-    public async Task InitializeRow(ILocator rowLocator)
+    public override async Task InitializeRow(ILocator rowLocator)
     {
         this.checkbox = rowLocator.Locator("td:nth-child(1)");
         this.name = await rowLocator.Locator("td:nth-child(3)").TextContentAsync();
@@ -21,7 +19,7 @@ public class InventoryItemGroupsRow : BaseComponent
         this.reorderPoint = await rowLocator.Locator("td:nth-child(6)").TextContentAsync();
     }
 
-    public string CompositeKey()
+    public override string CompositeKey()
     {
         return $"{this.GetName()}|{this.GetSKU()}";
     }

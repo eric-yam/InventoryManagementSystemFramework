@@ -37,5 +37,4 @@ public class InventoryItemRow : TableRow
     public string GetDesc() { return this.desc; }
 
     public string GetRate() { return this.rate; }
-
 }

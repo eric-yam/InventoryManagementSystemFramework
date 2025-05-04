@@ -7,16 +7,13 @@ namespace InventoryManagementSystemFramework.Pages.InventoryPage
     {
         private ILocator GroupDropdown() => this.page.Locator("a[class='dropdown-toggle ember-view     no-caret']");
         private ILocator DropdownMenu() => this.page.Locator("div[class='dropdown-menu show  scrollmenu listview-filter'] button[class^='dropdown-item']");
-        private InventoryItemGroupsTables table;
-        public InventoryItemGroupPage(IPage page) : base(page)
-        {
-            this.table = new InventoryItemGroupsTables(page);
-        }
+        private InventoryManagementTable table;
+        public InventoryItemGroupPage(IPage page) : base(page) { }
 
         public static async Task<InventoryItemGroupPage> CreateAsync(IPage page)
         {
             InventoryItemGroupPage iigp = new InventoryItemGroupPage(page);
-            iigp.table = await InventoryItemGroupsTables.CreateAsync(page);//double check 
+            iigp.table = await InventoryManagementTable.CreateAsync(page, TableRowFactory.CreateInventoryItemGroupRow);//double check 
             return iigp;
         }
 
@@ -36,7 +33,7 @@ namespace InventoryManagementSystemFramework.Pages.InventoryPage
             }
         }
 
-        public InventoryItemGroupsRow GetTableValue(string key)
+        public TableRow GetTableValue(string key)
         {
             return this.table.GetTableValue(key);
         }
