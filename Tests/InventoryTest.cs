@@ -3,10 +3,12 @@ using InventoryManagementSystemFramework.TestDataProviders;
 using InventoryManagementSystemFramework.Pages.InventoryPage;
 using InventoryManagementSystemFramework.Pages.InventoryPage.NewInvItemPage;
 using InventoryManagementSystemFramework.TestDataWorkflows;
+using Allure.NUnit;
 
 
 namespace InventoryManagementSystemFramework.Tests
 {
+    [AllureNUnit]
     public class InventoryTests : BaseTest
     {
         [Test]
