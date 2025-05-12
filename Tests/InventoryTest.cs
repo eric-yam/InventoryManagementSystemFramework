@@ -4,6 +4,7 @@ using InventoryManagementSystemFramework.Pages.InventoryPage;
 using InventoryManagementSystemFramework.Pages.InventoryPage.NewInvItemPage;
 using InventoryManagementSystemFramework.TestDataWorkflows;
 using Allure.NUnit;
+using Allure.NUnit.Attributes;
 
 
 namespace InventoryManagementSystemFramework.Tests
@@ -12,6 +13,7 @@ namespace InventoryManagementSystemFramework.Tests
     public class InventoryTests : BaseTest
     {
         [Test]
+        [AllureName("Inventory Page - Inventory Items Page Section Navigatibioubuoygbyuguioygion")]
         [TestCaseSource(typeof(TestDataProvider), nameof(TestDataProvider.NavBarWorkflowDataProvider))]
         public async Task Test_Inventory_Items(NavBarWorkflow wf)
         {
@@ -26,6 +28,7 @@ namespace InventoryManagementSystemFramework.Tests
         }
 
         [Test]
+        [AllureName("Inventory Page - Add New Item")]
         [TestCaseSource(typeof(TestDataProvider), nameof(TestDataProvider.AddNewItemWorkflowDataProvider))]
         public async Task Test_Fill_New_Inv_Item(AddNewItemWorkflow wf)
         {
@@ -54,6 +57,7 @@ namespace InventoryManagementSystemFramework.Tests
         }
 
         [Test]
+        [AllureName("Inventory Page - Add Item Group")]
         public async Task Test_Inventory_Item_Groups()
         {
             SideBar sideBar = new SideBar(Page);
@@ -65,6 +69,7 @@ namespace InventoryManagementSystemFramework.Tests
         }
 
         [Test]
+        [AllureName("Inventory Page - Add Item Adjustments")]
         public async Task Test_Inventory_Item_Adjustments()
         {
             SideBar sideBar = new SideBar(Page);

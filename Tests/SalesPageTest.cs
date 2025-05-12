@@ -1,10 +1,14 @@
+using Allure.NUnit;
+using Allure.NUnit.Attributes;
 using PlaywrightPractice.Tests;
 
 namespace InventoryManagementSystemFramework.Tests
 {
+    [AllureNUnit]
     public class SalesPageTest : BaseTest
     {
         [Test]
+        [AllureName("Sales Page - Verify Customer Table")]
         public async Task Test_Sales_Customer_Table()
         {
             SideBar sideBar = new SideBar(Page);

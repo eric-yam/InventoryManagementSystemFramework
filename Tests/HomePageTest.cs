@@ -5,12 +5,16 @@ using PlaywrightPractice.Tests;
 using InventoryManagementSystemFramework.Pages.HomePage;
 using InventoryManagementSystemFramework.TestDataProviders;
 using InventoryManagementSystemFramework.TestDataWorkflows;
+using Allure.NUnit;
+using Allure.NUnit.Attributes;
 
 namespace InventoryManagementSystemFramework.Tests
 {
+    [AllureNUnit]
     public class HomePageTest : BaseTest
     {
         [Test]
+        [AllureName("SideBar - SideBar Navigation")]
         [TestCaseSource(typeof(TestDataProvider), nameof(TestDataProvider.SideBarNavDataProvider))]
         public async Task Test_SideBar_Navigation(NavBarWorkflow wf)
         {
@@ -24,6 +28,7 @@ namespace InventoryManagementSystemFramework.Tests
         }
 
         [Test]
+        [AllureName("Home Page - Verify User and Organization")]
         [TestCaseSource(typeof(TestDataProvider), nameof(TestDataProvider.HomeDashBoardWorkflowDataProvider))]
         public async Task Test_HomePage_Get_User_Org(HomeDashBoardWorkflow wf)
         {
