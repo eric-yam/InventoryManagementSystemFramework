@@ -4,7 +4,6 @@ namespace InventoryManagementSystemFramework.Pages.InventoryPage
 {
     public class InventoryItemAdjustmentsPage : InventoryManagementPage
     {
-
         private InventoryItemAdjustmentsPage(IPage page) : base(page) { }
 
         public static async Task<InventoryItemAdjustmentsPage> CreateAsync(IPage page)

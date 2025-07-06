@@ -5,6 +5,7 @@ using InventoryManagementSystemFramework.Pages.InventoryPage.NewInvItemPage;
 using InventoryManagementSystemFramework.TestDataWorkflows;
 using Allure.NUnit;
 using Allure.NUnit.Attributes;
+using InventoryManagementSystemFramework.Pages.HomePage;
 
 
 namespace InventoryManagementSystemFramework.Tests
@@ -13,16 +14,16 @@ namespace InventoryManagementSystemFramework.Tests
     public class InventoryTests : BaseTest
     {
         [Test]
-        [AllureName("Inventory Page - Inventory Items Page Section Navigatibioubuoygbyuguioygion")]
-        [TestCaseSource(typeof(TestDataProvider), nameof(TestDataProvider.NavBarWorkflowDataProvider))]
-        public async Task Test_Inventory_Items(NavBarWorkflow wf)
+        [AllureName("Inventory Page - Inventory Items Page Section Navigation")]
+        public async Task Test_Inventory_Items()
         {
-            //Scrap test
-            SideBar sideBar = new SideBar(Page);
-            foreach (var step in wf.SideBarNav.SidebarNavSteps)
-            {
-                await sideBar.ClickNavSideBar(step);
-            }
+            //Home Page
+            HomePage homePage = new HomePage(Page);
+
+            //Navigate to Inventory Items tab
+            await homePage.sideBar.ClickNavSideBar("Inventory");
+            await homePage.sideBar.ClickNavSideBar("Items");
+
             InventoryItemsPage iip = await InventoryItemsPage.CreateAsync(Page);
             await iip.ClickNewItem();
         }
@@ -65,7 +66,7 @@ namespace InventoryManagementSystemFramework.Tests
             await sideBar.ClickNavSideBar("Inventory");
             await sideBar.ClickNavSideBar("Item Groups");
 
-            InventoryItemGroupPage iigp = await InventoryItemGroupPage.CreateAsync(Page);            
+            InventoryItemGroupPage iigp = await InventoryItemGroupPage.CreateAsync(Page);
             await iigp.SelectDropdownOption(wf1.DropDownGroupOption);
         }
 
@@ -73,9 +74,12 @@ namespace InventoryManagementSystemFramework.Tests
         [AllureName("Inventory Page - Add Item Adjustments")]
         public async Task Test_Inventory_Item_Adjustments()
         {
-            SideBar sideBar = new SideBar(Page);
-            await sideBar.ClickNavSideBar("Inventory");
-            await sideBar.ClickNavSideBar("Inventory Adjustments");
+            //Home Page
+            HomePage homePage = new HomePage(Page);
+
+            //Navigate to Inventory Adjustment tab
+            await homePage.sideBar.ClickNavSideBar("Inventory");
+            await homePage.sideBar.ClickNavSideBar("Inventory Adjustments");
 
             InventoryItemAdjustmentsPage iiap = await InventoryItemAdjustmentsPage.CreateAsync(Page);
         }

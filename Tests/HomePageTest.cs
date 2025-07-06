@@ -1,6 +1,3 @@
-using System.ComponentModel.DataAnnotations;
-using System.Threading.Tasks;
-using NUnit.Framework.Legacy;
 using PlaywrightPractice.Tests;
 using InventoryManagementSystemFramework.Pages.HomePage;
 using InventoryManagementSystemFramework.TestDataProviders;
