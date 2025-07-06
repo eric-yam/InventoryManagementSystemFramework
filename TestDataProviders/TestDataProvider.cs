@@ -41,5 +41,31 @@ namespace InventoryManagementSystemFramework.TestDataProviders
             string jsonString = File.ReadAllText("Resources\\add_new_item_workflow_test_data.json");
             return TestCaseDataProvider<AddNewItemWorkflow>(jsonString);
         }
+
+
+        public static IEnumerable<T> TestDataProviderSingle<T>(string jsonString)
+        {
+            // List<T>? deserializedList = JsonSerializer.Deserialize<List<T>>(jsonString);
+            // if (deserializedList != null)
+            // {
+            //     foreach (T currentTestDataModel in deserializedList)
+            //     {
+            //         yield return currentTestDataModel;
+            //     }
+            // }
+            // JsonSerializer.Deserialize<AddItemGroupWorkflow>(jsonString);
+
+
+            T? temp = JsonSerializer.Deserialize<T>(jsonString);
+            yield return temp;
+        }
+        public static IEnumerable<AddItemGroupWorkflow> AddItemGroupWorkflowDataProvider()
+        {
+            string jsonString = File.ReadAllText("Resources\\add_new_item_group_workflow_test_data.json");
+            return TestDataProviderSingle<AddItemGroupWorkflow>(jsonString);
+            // AddItemGroupWorkflow? temp = JsonSerializer.Deserialize<AddItemGroupWorkflow>(jsonString);
+            // yield return temp;
+            // return TestDataProviderSingle<AddItemGroupWorkflow>(jsonString);
+        }
     }
 }

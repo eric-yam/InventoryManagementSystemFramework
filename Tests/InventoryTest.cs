@@ -58,14 +58,15 @@ namespace InventoryManagementSystemFramework.Tests
 
         [Test]
         [AllureName("Inventory Page - Add Item Group")]
-        public async Task Test_Inventory_Item_Groups()
+        [TestCaseSource(typeof(TestDataProvider), nameof(TestDataProvider.AddItemGroupWorkflowDataProvider))]
+        public async Task Test_Inventory_Item_Groups(AddItemGroupWorkflow wf1)
         {
             SideBar sideBar = new SideBar(Page);
             await sideBar.ClickNavSideBar("Inventory");
             await sideBar.ClickNavSideBar("Item Groups");
 
-            InventoryItemGroupPage iigp = await InventoryItemGroupPage.CreateAsync(Page);
-            await iigp.SelectDropdownOption("Inactive Item Groups");
+            InventoryItemGroupPage iigp = await InventoryItemGroupPage.CreateAsync(Page);            
+            await iigp.SelectDropdownOption(wf1.DropDownGroupOption);
         }
 
         [Test]
